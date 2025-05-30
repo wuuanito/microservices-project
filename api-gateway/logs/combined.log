@@ -1,0 +1,127 @@
+[2025-05-30T07:56:49.104Z] INFO: Service registered: auth-service at http://auth-service:4001
+[2025-05-30T07:56:49.119Z] INFO: API Gateway running on port 3000
+[2025-05-30T07:56:49.127Z] ERROR: Health check failed for auth-service: connect ECONNREFUSED 172.18.0.2:4001
+[2025-05-30T07:57:04.366Z] ERROR: Health check failed for auth-service: connect ECONNREFUSED 172.18.0.2:4001
+[2025-05-30T07:57:18.019Z] ERROR: Health check failed for auth-service: getaddrinfo ENOTFOUND auth-service
+[2025-05-30T07:57:33.030Z] ERROR: Health check failed for auth-service: getaddrinfo EAI_AGAIN auth-service
+[2025-05-30T07:57:49.382Z] ERROR: Health check failed for auth-service: getaddrinfo ENOTFOUND auth-service
+[2025-05-30T07:58:04.392Z] ERROR: Health check failed for auth-service: getaddrinfo EAI_AGAIN auth-service
+[2025-05-30T07:58:20.811Z] ERROR: Health check failed for auth-service: getaddrinfo ENOTFOUND auth-service
+[2025-05-30T07:58:35.822Z] ERROR: Health check failed for auth-service: getaddrinfo EAI_AGAIN auth-service
+[2025-05-30T07:58:51.143Z] ERROR: Health check failed for auth-service: connect ECONNREFUSED 172.18.0.2:4001
+[2025-05-30T07:59:01.172Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T07:59:31.741Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:07:59:31 +0000] "POST /health HTTP/1.1" 404 27 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T07:59:33.748Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:07:59:33 +0000] "POST /health HTTP/1.1" 404 27 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T07:59:33.827Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T07:59:42.937Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:07:59:42 +0000] "POST /health HTTP/1.1" 404 27 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:00:06.563Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:00:16.078Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:00:16 +0000] "GET /health HTTP/1.1" 200 15 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:00:39.298Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:01:10.326Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:01:43.065Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:02:15.796Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:02:48.535Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:03:21.268Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:03:54.006Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:04:26.736Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:04:59.470Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:05:32.207Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:06:04.939Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:06:35.585Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:06:58.940Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:06:58 +0000] "POST /auth/register HTTP/1.1" 408 - "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:07:08.325Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:07:41.068Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:08:13.809Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:08:46.548Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:09:19.280Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:09:52.014Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:10:24.751Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:10:57.484Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:11:28.646Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:12:01.385Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:12:34.118Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:13:06.851Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:13:39.584Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:14:12.331Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:14:45.066Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:15:17.799Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:15:48.939Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:16:21.673Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:16:43.573Z] INFO: Service registered: auth-service at http://auth-service:4001
+[2025-05-30T08:16:43.591Z] INFO: API Gateway running on port 3000
+[2025-05-30T08:16:43.603Z] ERROR: Health check failed for auth-service: connect ECONNREFUSED 172.18.0.2:4001
+[2025-05-30T08:16:53.621Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:17:21.583Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:17:21 +0000] "GET /health HTTP/1.1" 200 15 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:17:26.356Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:17:45.414Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:17:45 +0000] "POST /auth/register HTTP/1.1" - - "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:17:59.097Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:18:31.834Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:18:55.116Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:18:55 +0000] "POST /auth/register HTTP/1.1" - - "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:19:04.575Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:19:37.314Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:20:10.051Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:20:42.796Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:21:13.554Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:21:46.297Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:22:19.039Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:22:51.787Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:23:24.523Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:23:57.267Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:24:30.000Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:25:02.743Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:25:35.489Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:26:06.044Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:26:38.791Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:27:11.534Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:27:44.270Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:28:20.067Z] INFO: Service registered: auth-service at http://auth-service:4001
+[2025-05-30T08:28:20.083Z] INFO: API Gateway running on port 3000
+[2025-05-30T08:28:20.091Z] ERROR: Health check failed for auth-service: connect ECONNREFUSED 172.18.0.2:4001
+[2025-05-30T08:28:32.837Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:28:37.911Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:28:37 +0000] "GET /health HTTP/1.1" 200 15 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:28:51.270Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:28:51 +0000] "POST /auth/register HTTP/1.1" - - "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:29:05.588Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:29:38.331Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:30:08.867Z] DEBUG: Health check for auth-service: UP
+[2025-05-30T08:31:49.068Z] INFO: API Gateway running on port 3000
+[2025-05-30T08:32:08.086Z] INFO: Proxying POST /auth/register to Auth Service
+[2025-05-30T08:32:09.344Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:32:09 +0000] "POST /auth/register HTTP/1.1" - - "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:32:11.232Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:32:11 +0000] "GET /health HTTP/1.1" 200 50 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:32:36.126Z] INFO: Proxying POST /auth/register to Auth Service
+[2025-05-30T08:37:13.789Z] INFO: API Gateway running on port 3000
+[2025-05-30T08:37:48.156Z] INFO: Proxying POST /auth/register to Auth Service
+[2025-05-30T08:37:54.412Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:37:54 +0000] "POST /auth/register HTTP/1.1" - - "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:38:00.374Z] INFO: Proxying POST /auth/register to Auth Service
+[2025-05-30T08:38:22.289Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:38:22 +0000] "GET /diagnose HTTP/1.1" 200 201 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:43:45.044Z] INFO: Received response from Auth Service: 408
+[2025-05-30T08:43:45.046Z] INFO: Received response from Auth Service: 408
+[2025-05-30T08:43:45.047Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:43:45 +0000] "POST /auth/register HTTP/1.1" 408 - "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:48:35.799Z] INFO: API Gateway running on port 3000
+[2025-05-30T08:48:44.422Z] INFO: Proxying POST /auth/register to Auth Service with body: {"username":"testuser","email":"test@example.com","password":"password123","firstName":"Test","lastName":"User"}
+[2025-05-30T08:48:44.436Z] INFO: Received response from Auth Service: 404
+[2025-05-30T08:48:44.437Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:48:44 +0000] "POST /auth/register HTTP/1.1" 404 27 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:48:59.667Z] INFO: Proxying POST /auth/register to Auth Service with body: {"username":"testuser","email":"test@example.com","password":"password123","firstName":"Test","lastName":"User"}
+[2025-05-30T08:48:59.671Z] INFO: Received response from Auth Service: 404
+[2025-05-30T08:48:59.672Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:48:59 +0000] "POST /auth/register HTTP/1.1" 404 27 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:52:17.999Z] INFO: API Gateway running on port 3000
+[2025-05-30T08:52:25.279Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-05-30T08:52:25.311Z] INFO: Received response from Auth Service: 409
+[2025-05-30T08:52:25.313Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:52:25 +0000] "POST /auth/register HTTP/1.1" 409 59 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:52:30.137Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-05-30T08:52:30.143Z] INFO: Received response from Auth Service: 409
+[2025-05-30T08:52:30.144Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:52:30 +0000] "POST /auth/register HTTP/1.1" 409 59 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:52:33.530Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-05-30T08:52:33.536Z] INFO: Received response from Auth Service: 409
+[2025-05-30T08:52:33.536Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:52:33 +0000] "POST /auth/register HTTP/1.1" 409 59 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:52:38.668Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-05-30T08:52:38.769Z] INFO: Received response from Auth Service: 201
+[2025-05-30T08:52:38.770Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:52:38 +0000] "POST /auth/register HTTP/1.1" 201 688 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:53:08.849Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-05-30T08:53:08.871Z] INFO: Received response from Auth Service: 401
+[2025-05-30T08:53:08.872Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:53:08 +0000] "POST /auth/login HTTP/1.1" 401 31 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:53:44.727Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-05-30T08:53:44.822Z] INFO: Received response from Auth Service: 200
+[2025-05-30T08:53:44.823Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:53:44 +0000] "POST /auth/login HTTP/1.1" 200 676 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:53:51.658Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-05-30T08:53:51.720Z] INFO: Received response from Auth Service: 200
+[2025-05-30T08:53:51.721Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:53:51 +0000] "POST /auth/login HTTP/1.1" 200 676 "-" "PostmanRuntime/7.44.0"

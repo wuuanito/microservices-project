@@ -1,0 +1,11 @@
+[2025-05-30T07:56:49.127Z] ERROR: Health check failed for auth-service: connect ECONNREFUSED 172.18.0.2:4001
+[2025-05-30T07:57:04.366Z] ERROR: Health check failed for auth-service: connect ECONNREFUSED 172.18.0.2:4001
+[2025-05-30T07:57:18.019Z] ERROR: Health check failed for auth-service: getaddrinfo ENOTFOUND auth-service
+[2025-05-30T07:57:33.030Z] ERROR: Health check failed for auth-service: getaddrinfo EAI_AGAIN auth-service
+[2025-05-30T07:57:49.382Z] ERROR: Health check failed for auth-service: getaddrinfo ENOTFOUND auth-service
+[2025-05-30T07:58:04.392Z] ERROR: Health check failed for auth-service: getaddrinfo EAI_AGAIN auth-service
+[2025-05-30T07:58:20.811Z] ERROR: Health check failed for auth-service: getaddrinfo ENOTFOUND auth-service
+[2025-05-30T07:58:35.822Z] ERROR: Health check failed for auth-service: getaddrinfo EAI_AGAIN auth-service
+[2025-05-30T07:58:51.143Z] ERROR: Health check failed for auth-service: connect ECONNREFUSED 172.18.0.2:4001
+[2025-05-30T08:16:43.603Z] ERROR: Health check failed for auth-service: connect ECONNREFUSED 172.18.0.2:4001
+[2025-05-30T08:28:20.091Z] ERROR: Health check failed for auth-service: connect ECONNREFUSED 172.18.0.2:4001

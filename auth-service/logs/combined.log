@@ -1,0 +1,101 @@
+[2025-05-30T07:56:49.223Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T07:56:50.774Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T07:56:52.061Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T07:56:53.373Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T07:56:55.167Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T07:56:57.649Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T07:57:04.271Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T07:57:11.339Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T07:57:24.735Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T07:57:53.899Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T07:58:51.726Z] INFO: Database connection established successfully
+[2025-05-30T07:58:51.728Z] INFO: Auth service running on port 4001
+[2025-05-30T07:59:01.168Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:07:59:01 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T07:59:33.827Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:07:59:33 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:00:06.562Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:00:06 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:00:39.297Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:00:39 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:01:10.326Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:01:10 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:01:43.064Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:01:43 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:02:15.796Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:02:15 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:02:48.535Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:02:48 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:03:21.268Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:03:21 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:03:54.005Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:03:54 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:04:26.736Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:04:26 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:04:59.470Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:04:59 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:05:32.206Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:05:32 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:06:04.939Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:06:04 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:06:35.584Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:06:35 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:06:58.940Z] ERROR: Error: request aborted
+[2025-05-30T08:07:08.323Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:07:08 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:07:41.068Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:07:41 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:08:13.808Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:08:13 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:08:46.546Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:08:46 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:09:19.279Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:09:19 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:09:52.014Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:09:52 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:10:24.750Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:10:24 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:10:57.483Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:10:57 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:11:28.645Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:11:28 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:12:01.385Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:12:01 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:12:34.118Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:12:34 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:13:06.850Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:13:06 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:13:39.584Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:13:39 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:14:12.331Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:14:12 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:14:45.066Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:14:45 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:14:53.549Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:14:53 +0000] "GET /health HTTP/1.1" 200 15 "-" "Wget"
+[2025-05-30T08:15:17.798Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:15:17 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:15:48.939Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:15:48 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:16:21.673Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:16:21 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:16:43.657Z] INFO: Database connection established successfully
+[2025-05-30T08:16:43.660Z] INFO: Auth service running on port 4001
+[2025-05-30T08:16:53.618Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:16:53 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:17:26.356Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:17:26 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:17:59.097Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:17:59 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:18:02.956Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:18:02 +0000] "POST /auth/register HTTP/1.1" 404 27 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:18:31.834Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:18:31 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:18:33.191Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:08:18:33 +0000] "POST /api/auth/register HTTP/1.1" 201 678 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:19:04.574Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:19:04 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:19:37.314Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:19:37 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:20:10.051Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:20:10 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:20:42.795Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:20:42 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:21:13.554Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:21:13 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:21:46.297Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:21:46 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:22:19.039Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:22:19 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:22:51.786Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:22:51 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:23:14.567Z] ERROR: Error: request aborted
+[2025-05-30T08:23:24.523Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:23:24 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:23:57.267Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:23:57 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:24:20.039Z] ERROR: Error: request aborted
+[2025-05-30T08:24:29.999Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:24:29 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:25:02.742Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:25:02 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:25:35.487Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:25:35 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:26:06.044Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:26:06 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:26:38.790Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:26:38 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:27:11.533Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:27:11 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:27:44.270Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:27:44 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:28:20.215Z] INFO: Database connection established successfully
+[2025-05-30T08:28:20.217Z] INFO: Auth service running on port 4001
+[2025-05-30T08:28:32.835Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:28:32 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:29:05.588Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:29:05 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:29:38.330Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:29:38 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:30:08.867Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:30:08 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:30:34.824Z] ERROR: Error: request aborted
+[2025-05-30T08:31:49.257Z] INFO: Database connection established successfully
+[2025-05-30T08:31:49.260Z] INFO: Auth service running on port 4001
+[2025-05-30T08:36:14.936Z] ERROR: Error: request aborted
+[2025-05-30T08:36:14.945Z] ERROR: Error: request aborted
+[2025-05-30T08:37:14.161Z] INFO: Database connection established successfully
+[2025-05-30T08:37:14.164Z] INFO: Auth service running on port 4001
+[2025-05-30T08:38:22.284Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:38:22 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-05-30T08:43:45.047Z] ERROR: Error: request aborted
+[2025-05-30T08:43:45.050Z] ERROR: Error: request aborted
+[2025-05-30T08:48:36.051Z] INFO: Database connection established successfully
+[2025-05-30T08:48:36.053Z] INFO: Auth service running on port 4001
+[2025-05-30T08:48:44.436Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:48:44 +0000] "POST /auth/register HTTP/1.1" 404 27 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:48:59.671Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:48:59 +0000] "POST /auth/register HTTP/1.1" 404 27 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:52:25.311Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:52:25 +0000] "POST /api/auth/register HTTP/1.1" 409 59 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:52:30.143Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:52:30 +0000] "POST /api/auth/register HTTP/1.1" 409 59 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:52:33.536Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:52:33 +0000] "POST /api/auth/register HTTP/1.1" 409 59 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:52:38.769Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:52:38 +0000] "POST /api/auth/register HTTP/1.1" 201 688 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:53:08.871Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:53:08 +0000] "POST /api/auth/login HTTP/1.1" 401 31 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:53:44.822Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:53:44 +0000] "POST /api/auth/login HTTP/1.1" 200 676 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T08:53:51.720Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:53:51 +0000] "POST /api/auth/login HTTP/1.1" 200 676 "-" "PostmanRuntime/7.44.0"

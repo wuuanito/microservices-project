@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  api-gateway:
+    build: ./api-gateway
+    container_name: api-gateway
+    ports:
+      - "${API_GATEWAY_PORT:-3000}:3000"
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - AUTH_SERVICE_URL=http://auth-service:4001
+      - JWT_SECRET=${JWT_SECRET}
+    depends_on:
+      - auth-service
+    networks:
+      - microservices-network
+    volumes:
+      - ./api-gateway:/app
+      - /app/node_modules
+    restart: unless-stopped
+
+  auth-service:
+    build: ./auth-service
+    container_name: auth-service
+    ports:
+      - "${AUTH_SERVICE_PORT:-4001}:4001"
+    environment:
+      - NODE_ENV=development
+      - PORT=4001
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - AUTH_DB_NAME=${AUTH_DB_NAME}
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRES_IN=${JWT_EXPIRES_IN}
+    networks:
+      - microservices-network
+    volumes:
+      - ./auth-service:/app
+      - /app/node_modules
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+networks:
+  microservices-network:
+    driver: bridge
