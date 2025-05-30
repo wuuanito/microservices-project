@@ -155,3 +155,64 @@
 [2025-05-30T09:50:55.337Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
 [2025-05-30T09:50:55.511Z] INFO: Received response from Auth Service: 201
 [2025-05-30T09:50:55.512Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:09:50:55 +0000] "POST /auth/register HTTP/1.1" 201 800 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T10:18:38.531Z] INFO: API Gateway running on port 3000
+[2025-05-30T10:19:54.072Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-05-30T10:19:54.202Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:19:54.204Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:19:54 +0000] "POST /auth/login HTTP/1.1" 200 727 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:24:03.922Z] INFO: Proxying GET /auth/me to Auth Service at http://auth-service:4001/api/auth/api/auth/me
+[2025-05-30T10:24:04.016Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:24:04.017Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:24:04 +0000] "GET /auth/me HTTP/1.1" 200 342 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:24:15.972Z] INFO: Proxying POST /auth/logout to Auth Service at http://auth-service:4001/api/auth/api/auth/logout
+[2025-05-30T10:24:16.010Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:24:16.011Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:24:16 +0000] "POST /auth/logout HTTP/1.1" 200 95 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:24:34.637Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-05-30T10:24:34.742Z] INFO: Received response from Auth Service: 201
+[2025-05-30T10:24:34.743Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:24:34 +0000] "POST /auth/register HTTP/1.1" 201 800 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T10:24:42.831Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-05-30T10:24:42.904Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:24:42.905Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:24:42 +0000] "POST /auth/login HTTP/1.1" 200 729 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:24:48.039Z] INFO: Proxying POST /auth/logout to Auth Service at http://auth-service:4001/api/auth/api/auth/logout
+[2025-05-30T10:24:48.048Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:24:48.049Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:24:48 +0000] "POST /auth/logout HTTP/1.1" 200 95 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:25:05.538Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-05-30T10:25:05.620Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:25:05.620Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:25:05 +0000] "POST /auth/login HTTP/1.1" 200 727 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:25:17.381Z] INFO: Proxying GET /auth/me to Auth Service at http://auth-service:4001/api/auth/api/auth/me
+[2025-05-30T10:25:17.400Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:25:17.400Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:25:17 +0000] "GET /auth/me HTTP/1.1" 200 342 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:25:17.916Z] INFO: Proxying GET /auth/me to Auth Service at http://auth-service:4001/api/auth/api/auth/me
+[2025-05-30T10:25:17.921Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:25:17.922Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:25:17 +0000] "GET /auth/me HTTP/1.1" 200 342 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:25:19.722Z] INFO: Proxying GET /auth/me to Auth Service at http://auth-service:4001/api/auth/api/auth/me
+[2025-05-30T10:25:19.726Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:25:19.727Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:25:19 +0000] "GET /auth/me HTTP/1.1" 200 342 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:25:19.870Z] INFO: Proxying GET /auth/me to Auth Service at http://auth-service:4001/api/auth/api/auth/me
+[2025-05-30T10:25:19.876Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:25:19.877Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:25:19 +0000] "GET /auth/me HTTP/1.1" 200 342 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:25:22.932Z] INFO: Proxying POST /auth/logout to Auth Service at http://auth-service:4001/api/auth/api/auth/logout
+[2025-05-30T10:25:22.941Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:25:22.942Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:25:22 +0000] "POST /auth/logout HTTP/1.1" 200 95 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:25:37.745Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-05-30T10:25:37.820Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:25:37.821Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:25:37 +0000] "POST /auth/login HTTP/1.1" 200 729 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:25:39.195Z] INFO: Proxying GET /auth/me to Auth Service at http://auth-service:4001/api/auth/api/auth/me
+[2025-05-30T10:25:39.201Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:25:39.202Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:25:39 +0000] "GET /auth/me HTTP/1.1" 200 342 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:25:39.771Z] INFO: Proxying GET /auth/me to Auth Service at http://auth-service:4001/api/auth/api/auth/me
+[2025-05-30T10:25:39.776Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:25:39.777Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:25:39 +0000] "GET /auth/me HTTP/1.1" 200 342 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:29:19.336Z] INFO: Proxying GET /auth/me to Auth Service at http://auth-service:4001/api/auth/api/auth/me
+[2025-05-30T10:29:19.357Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:29:19.358Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:29:19 +0000] "GET /auth/me HTTP/1.1" 200 342 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:30:08.140Z] INFO: Proxying GET /auth/me to Auth Service at http://auth-service:4001/api/auth/api/auth/me
+[2025-05-30T10:30:08.158Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:30:08.158Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:30:08 +0000] "GET /auth/me HTTP/1.1" 200 342 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:30:10.206Z] INFO: Proxying POST /auth/logout to Auth Service at http://auth-service:4001/api/auth/api/auth/logout
+[2025-05-30T10:30:10.223Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:30:10.224Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:30:10 +0000] "POST /auth/logout HTTP/1.1" 200 95 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:30:23.673Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-05-30T10:30:23.742Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:30:23.743Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:30:23 +0000] "POST /auth/login HTTP/1.1" 200 727 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-05-30T10:30:27.165Z] INFO: Proxying GET /auth/me to Auth Service at http://auth-service:4001/api/auth/api/auth/me
+[2025-05-30T10:30:27.172Z] INFO: Received response from Auth Service: 200
+[2025-05-30T10:30:27.173Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:10:30:27 +0000] "GET /auth/me HTTP/1.1" 200 342 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"

@@ -49,4 +49,5 @@ Write-Host "=======================================================" -Foreground
 Write-Host "Servicios iniciados correctamente" -ForegroundColor $Green
 Write-Host "API Gateway: http://localhost:3000" -ForegroundColor $Yellow
 Write-Host "Auth Service: http://localhost:4001" -ForegroundColor $Yellow
+Write-Host "Frontend: http://localhost:80" -ForegroundColor $Yellow
 Write-Host "=======================================================" -ForegroundColor $Blue
