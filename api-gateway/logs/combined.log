@@ -148,3 +148,10 @@
 [2025-05-30T09:41:59.250Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
 [2025-05-30T09:41:59.312Z] INFO: Received response from Auth Service: 409
 [2025-05-30T09:41:59.314Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:09:41:59 +0000] "POST /auth/register HTTP/1.1" 409 59 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T09:43:03.419Z] INFO: API Gateway running on port 3000
+[2025-05-30T09:43:50.089Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-05-30T09:43:50.119Z] INFO: Received response from Auth Service: 500
+[2025-05-30T09:43:50.121Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:09:43:50 +0000] "POST /auth/register HTTP/1.1" 500 71 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T09:50:55.337Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-05-30T09:50:55.511Z] INFO: Received response from Auth Service: 201
+[2025-05-30T09:50:55.512Z] INFO: ::ffff:172.18.0.1 - - [30/May/2025:09:50:55 +0000] "POST /auth/register HTTP/1.1" 201 800 "-" "PostmanRuntime/7.44.0"
