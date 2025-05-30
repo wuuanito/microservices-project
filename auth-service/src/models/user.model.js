@@ -1,3 +1,4 @@
+// auth-service/src/models/user.model.js
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
     id: {
@@ -34,8 +35,31 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true
     },
     role: {
-      type: DataTypes.ENUM('user', 'admin'),
-      defaultValue: 'user'
+      type: DataTypes.ENUM('director', 'administrador', 'empleado'),
+      defaultValue: 'empleado'
+    },
+    department: {
+      type: DataTypes.ENUM(
+        'informatica', 
+        'administracion', 
+        'internacional', 
+        'compras', 
+        'gerencia', 
+        'oficina_tecnica', 
+        'calidad', 
+        'laboratorio', 
+        'rrhh', 
+        'logistica', 
+        'mantenimiento', 
+        'softgel', 
+        'produccion',
+        'sin_departamento'
+      ),
+      defaultValue: 'sin_departamento'
+    },
+    jobTitle: {
+      type: DataTypes.STRING(100),
+      allowNull: true
     },
     isActive: {
       type: DataTypes.BOOLEAN,

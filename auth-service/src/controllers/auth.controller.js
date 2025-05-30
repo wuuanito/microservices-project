@@ -5,9 +5,19 @@ const logger = require('../utils/logger');
 const { formatResponse } = require('../utils/response-formatter');
 
 // Register a new user
+// auth-service/src/controllers/auth.controller.js (actualizar función register)
 const register = async (req, res, next) => {
   try {
-    const { username, email, password, firstName, lastName } = req.body;
+    const { 
+      username, 
+      email, 
+      password, 
+      firstName, 
+      lastName, 
+      department, 
+      role,
+      jobTitle 
+    } = req.body;
     
     // Check if user already exists
     const existingUser = await userService.findByUsernameOrEmail(username, email);
@@ -17,13 +27,16 @@ const register = async (req, res, next) => {
       });
     }
     
-    // Create user
+    // Create user - incluir nuevos campos
     const user = await userService.createUser({
       username,
       email,
       password,
       firstName,
-      lastName
+      lastName,
+      department: department || 'sin_departamento',
+      role: role || 'empleado',
+      jobTitle
     });
     
     // Generate tokens
@@ -39,7 +52,9 @@ const register = async (req, res, next) => {
         email: user.email,
         firstName: user.firstName,
         lastName: user.lastName,
-        role: user.role
+        role: user.role,
+        department: user.department,
+        jobTitle: user.jobTitle
       },
       accessToken,
       refreshToken
@@ -158,6 +173,7 @@ const logout = async (req, res, next) => {
 };
 
 // Get user profile
+// auth-service/src/controllers/auth.controller.js (actualizar función getProfile)
 const getProfile = async (req, res, next) => {
   try {
     const { user } = req;
@@ -177,6 +193,8 @@ const getProfile = async (req, res, next) => {
       firstName: userProfile.firstName,
       lastName: userProfile.lastName,
       role: userProfile.role,
+      department: userProfile.department,
+      jobTitle: userProfile.jobTitle,
       createdAt: userProfile.createdAt,
       lastLogin: userProfile.lastLogin
     }));

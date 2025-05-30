@@ -99,3 +99,27 @@
 [2025-05-30T08:53:08.871Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:53:08 +0000] "POST /api/auth/login HTTP/1.1" 401 31 "-" "PostmanRuntime/7.44.0"
 [2025-05-30T08:53:44.822Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:53:44 +0000] "POST /api/auth/login HTTP/1.1" 200 676 "-" "PostmanRuntime/7.44.0"
 [2025-05-30T08:53:51.720Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:08:53:51 +0000] "POST /api/auth/login HTTP/1.1" 200 676 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T09:02:27.080Z] INFO: Database connection established successfully
+[2025-05-30T09:02:27.082Z] INFO: Auth service running on port 4001
+[2025-05-30T09:04:01.004Z] ERROR: Error finding user by username or email: Unknown column 'department' in 'field list'
+[2025-05-30T09:04:01.005Z] ERROR: Error: Error finding user
+[2025-05-30T09:04:01.024Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:09:04:01 +0000] "POST /api/auth/register HTTP/1.1" 500 71 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T09:04:08.926Z] ERROR: Error finding user by username or email: Unknown column 'department' in 'field list'
+[2025-05-30T09:04:08.927Z] ERROR: Error: Error finding user
+[2025-05-30T09:04:08.928Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:09:04:08 +0000] "POST /api/auth/register HTTP/1.1" 500 71 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T09:06:05.265Z] ERROR: Error finding user by username or email: Unknown column 'department' in 'field list'
+[2025-05-30T09:06:05.266Z] ERROR: Error: Error finding user
+[2025-05-30T09:06:05.267Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:09:06:05 +0000] "POST /api/auth/register HTTP/1.1" 500 71 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T09:06:11.470Z] ERROR: Error finding user by username or email: Unknown column 'department' in 'field list'
+[2025-05-30T09:06:11.470Z] ERROR: Error: Error finding user
+[2025-05-30T09:06:11.472Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:09:06:11 +0000] "POST /api/auth/register HTTP/1.1" 500 71 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T09:07:03.243Z] INFO: Database connection established successfully
+[2025-05-30T09:07:03.246Z] INFO: Auth service running on port 4001
+[2025-05-30T09:07:46.441Z] ERROR: Error finding user by username or email: Unknown column 'department' in 'field list'
+[2025-05-30T09:07:46.441Z] ERROR: Error: Error finding user
+[2025-05-30T09:07:46.444Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:09:07:46 +0000] "POST /api/auth/register HTTP/1.1" 500 71 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T09:09:27.351Z] INFO: Database synchronized successfully. All tables recreated.
+[2025-05-30T09:09:27.415Z] INFO: Admin user created with ID: 1
+[2025-05-30T09:09:57.076Z] INFO: Database connection established successfully
+[2025-05-30T09:09:57.078Z] INFO: Auth service running on port 4001
+[2025-05-30T09:10:01.712Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:09:10:01 +0000] "POST /api/auth/register HTTP/1.1" 201 800 "-" "PostmanRuntime/7.44.0"

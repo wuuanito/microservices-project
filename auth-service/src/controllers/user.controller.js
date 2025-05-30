@@ -68,13 +68,14 @@ const getUserById = async (req, res, next) => {
 };
 
 // Update user (admin or self)
+// auth-service/src/controllers/user.controller.js (actualizar función updateUser)
 const updateUser = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const { firstName, lastName, email } = req.body;
+    const { firstName, lastName, email, department, role, jobTitle } = req.body;
     
-    // Check if user is admin or updating their own profile
-    if (req.user.role !== 'admin' && req.user.id !== parseInt(id, 10)) {
+    // Check if user is administrador/director or updating their own profile
+    if (req.user.role !== 'administrador' && req.user.role !== 'director' && req.user.id !== parseInt(id, 10)) {
       return res.status(403).json({ 
         error: 'Forbidden - You can only update your own profile' 
       });
@@ -88,12 +89,19 @@ const updateUser = async (req, res, next) => {
       });
     }
     
+    // Solo los administradores y directores pueden cambiar el departamento y rol
+    let updateData = { firstName, lastName, email };
+    if (req.user.role === 'administrador' || req.user.role === 'director') {
+      updateData = { ...updateData, department, jobTitle };
+      
+      // Solo directores pueden cambiar el rol
+      if (req.user.role === 'director') {
+        updateData.role = role;
+      }
+    }
+    
     // Update user
-    const updatedUser = await userService.updateUser(id, {
-      firstName,
-      lastName,
-      email
-    });
+    const updatedUser = await userService.updateUser(id, updateData);
     
     return res.status(200).json(formatResponse({
       id: updatedUser.id,
@@ -101,7 +109,9 @@ const updateUser = async (req, res, next) => {
       email: updatedUser.email,
       firstName: updatedUser.firstName,
       lastName: updatedUser.lastName,
-      role: updatedUser.role
+      role: updatedUser.role,
+      department: updatedUser.department,
+      jobTitle: updatedUser.jobTitle
     }, 'User updated successfully'));
   } catch (error) {
     next(error);

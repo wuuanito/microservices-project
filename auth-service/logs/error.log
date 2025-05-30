@@ -16,3 +16,13 @@
 [2025-05-30T08:36:14.945Z] ERROR: Error: request aborted
 [2025-05-30T08:43:45.047Z] ERROR: Error: request aborted
 [2025-05-30T08:43:45.050Z] ERROR: Error: request aborted
+[2025-05-30T09:04:01.004Z] ERROR: Error finding user by username or email: Unknown column 'department' in 'field list'
+[2025-05-30T09:04:01.005Z] ERROR: Error: Error finding user
+[2025-05-30T09:04:08.926Z] ERROR: Error finding user by username or email: Unknown column 'department' in 'field list'
+[2025-05-30T09:04:08.927Z] ERROR: Error: Error finding user
+[2025-05-30T09:06:05.265Z] ERROR: Error finding user by username or email: Unknown column 'department' in 'field list'
+[2025-05-30T09:06:05.266Z] ERROR: Error: Error finding user
+[2025-05-30T09:06:11.470Z] ERROR: Error finding user by username or email: Unknown column 'department' in 'field list'
+[2025-05-30T09:06:11.470Z] ERROR: Error: Error finding user
+[2025-05-30T09:07:46.441Z] ERROR: Error finding user by username or email: Unknown column 'department' in 'field list'
+[2025-05-30T09:07:46.441Z] ERROR: Error: Error finding user

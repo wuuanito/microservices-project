@@ -7,12 +7,33 @@ const { authMiddleware } = require('../middleware/auth.middleware');
 const router = express.Router();
 
 // Register new user
+// auth-service/src/routes/auth.routes.js (actualizar validación en ruta /register)
 router.post(
   '/register',
   [
     body('username').isLength({ min: 3, max: 50 }).withMessage('Username must be between 3 and 50 characters'),
     body('email').isEmail().withMessage('Must be a valid email address'),
     body('password').isLength({ min: 6 }).withMessage('Password must be at least 6 characters'),
+    body('department').optional().isIn([
+      'informatica', 
+      'administracion', 
+      'internacional', 
+      'compras', 
+      'gerencia', 
+      'oficina_tecnica', 
+      'calidad', 
+      'laboratorio', 
+      'rrhh', 
+      'logistica', 
+      'mantenimiento', 
+      'softgel', 
+      'produccion',
+      'sin_departamento'
+    ]).withMessage('Invalid department'),
+    body('role').optional().isIn([
+      'director', 'administrador', 'empleado'
+    ]).withMessage('Invalid role'),
+    body('jobTitle').optional().isString().isLength({ max: 100 }).withMessage('Job title must be a string with max 100 characters'),
     validateRequest
   ],
   authController.register

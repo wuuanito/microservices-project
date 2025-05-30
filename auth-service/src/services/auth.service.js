@@ -5,14 +5,15 @@ const { User, Token } = require('../models');
 const config = require('../config/app.config');
 const logger = require('../utils/logger');
 
-// Generate access and refresh tokens for a user
+// auth-service/src/services/auth.service.js (actualizar función generateTokens)
 const generateTokens = async (user) => {
   // Create payload for JWT
   const payload = {
     id: user.id,
     username: user.username,
     email: user.email,
-    role: user.role
+    role: user.role,
+    department: user.department
   };
   
   // Generate access token
