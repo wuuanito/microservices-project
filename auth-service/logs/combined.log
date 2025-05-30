@@ -123,3 +123,27 @@
 [2025-05-30T09:09:57.076Z] INFO: Database connection established successfully
 [2025-05-30T09:09:57.078Z] INFO: Auth service running on port 4001
 [2025-05-30T09:10:01.712Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:09:10:01 +0000] "POST /api/auth/register HTTP/1.1" 201 800 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T09:40:55.309Z] INFO: Database connection established successfully
+[2025-05-30T09:40:55.312Z] INFO: Auth service running on port 4001
+[2025-05-30T09:41:59.312Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:09:41:59 +0000] "POST /api/auth/register HTTP/1.1" 409 59 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T09:43:03.643Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:04.850Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:06.107Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:07.325Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:08.786Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:11.198Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:17.886Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:24.954Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:38.474Z] INFO: Database connection established successfully
+[2025-05-30T09:43:38.476Z] INFO: Auth service running on port 4001
+[2025-05-30T09:43:50.115Z] ERROR: Error finding user by username or email: Table 'auth_service_db.users' doesn't exist
+[2025-05-30T09:43:50.116Z] ERROR: Error: Error finding user
+[2025-05-30T09:43:50.119Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:09:43:50 +0000] "POST /api/auth/register HTTP/1.1" 500 71 "-" "PostmanRuntime/7.44.0"
+[2025-05-30T09:40:42.107Z] ERROR: Error synchronizing database: Access denied for user 'root'@'host.docker.internal' (using password: NO)
+[2025-05-30T09:41:31.102Z] ERROR: Error synchronizing database: Access denied for user 'root'@'host.docker.internal' (using password: NO)
+[2025-05-30T09:42:30.576Z] ERROR: Error synchronizing database: Access denied for user 'root'@'%' to database 'auth_service_db'
+[2025-05-30T09:42:39.359Z] ERROR: Error synchronizing database: Access denied for user 'root'@'%' to database 'auth_service_db'
+[2025-05-30T09:43:09.919Z] ERROR: Error synchronizing database: Access denied for user 'root'@'%' to database 'auth_service_db'
+[2025-05-30T09:45:52.753Z] INFO: Database synchronized successfully. All tables recreated.
+[2025-05-30T09:45:52.824Z] INFO: Admin user created with ID: 1
+[2025-05-30T09:50:55.511Z] INFO: ::ffff:172.18.0.3 - - [30/May/2025:09:50:55 +0000] "POST /api/auth/register HTTP/1.1" 201 800 "-" "PostmanRuntime/7.44.0"

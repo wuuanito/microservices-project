@@ -26,3 +26,18 @@
 [2025-05-30T09:06:11.470Z] ERROR: Error: Error finding user
 [2025-05-30T09:07:46.441Z] ERROR: Error finding user by username or email: Unknown column 'department' in 'field list'
 [2025-05-30T09:07:46.441Z] ERROR: Error: Error finding user
+[2025-05-30T09:43:03.643Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:04.850Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:06.107Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:07.325Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:08.786Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:11.198Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:17.886Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:24.954Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-05-30T09:43:50.115Z] ERROR: Error finding user by username or email: Table 'auth_service_db.users' doesn't exist
+[2025-05-30T09:43:50.116Z] ERROR: Error: Error finding user
+[2025-05-30T09:40:42.107Z] ERROR: Error synchronizing database: Access denied for user 'root'@'host.docker.internal' (using password: NO)
+[2025-05-30T09:41:31.102Z] ERROR: Error synchronizing database: Access denied for user 'root'@'host.docker.internal' (using password: NO)
+[2025-05-30T09:42:30.576Z] ERROR: Error synchronizing database: Access denied for user 'root'@'%' to database 'auth_service_db'
+[2025-05-30T09:42:39.359Z] ERROR: Error synchronizing database: Access denied for user 'root'@'%' to database 'auth_service_db'
+[2025-05-30T09:43:09.919Z] ERROR: Error synchronizing database: Access denied for user 'root'@'%' to database 'auth_service_db'
