@@ -83,6 +83,36 @@ app.use('/auth', createProxyMiddleware({
   }
 }));
 
+// Proxy setup for calendar service
+app.use('/calendar', createProxyMiddleware({
+  target: config.calendarServiceUrl, // Ensure this is defined in your config/app.config.js
+  changeOrigin: true,
+  pathRewrite: {
+    '^/calendar': '' // This will remove /calendar prefix, so /calendar/api/events becomes /api/events
+  },
+  logLevel: 'debug',
+  onProxyReq: (proxyReq, req, res) => {
+    if (req.body) {
+      const bodyData = JSON.stringify(req.body);
+      proxyReq.setHeader('Content-Type', 'application/json');
+      proxyReq.setHeader('Content-Length', Buffer.byteLength(bodyData));
+      proxyReq.write(bodyData);
+    }
+    logger.info(`Proxying ${req.method} ${req.originalUrl} to Calendar Service at ${config.calendarServiceUrl}${req.url.replace('/calendar', '')}`);
+  },
+  onProxyRes: (proxyRes, req, res) => {
+    logger.info(`Received response from Calendar Service: ${proxyRes.statusCode}`);
+  },
+  onError: (err, req, res) => {
+    logger.error(`Proxy error to Calendar Service: ${err.toString()}`);
+    res.status(502).json({
+      error: 'Bad Gateway',
+      message: 'Error connecting to calendar service',
+      details: err.toString()
+    });
+  }
+}));
+
 // Catch-all route
 app.use('*', (req, res) => {
   res.status(404).json({ error: 'Route not found' });

@@ -1,0 +1,170 @@
+/* General Calendar Container Styling */
+.rbc-calendar-container {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  /* Ensure enough height for the calendar to be useful */
+  min-height: 70vh; /* Or use a fixed vh like before: height: 75vh */
+}
+
+/* Ensure modal is above calendar */
+.modal.fade.show {
+  z-index: 1050; /* Default Bootstrap modal z-index */
+}
+
+/* Toolbar buttons styling */
+.rbc-toolbar button {
+  margin-bottom: 0.5rem; /* Add some space below toolbar buttons on small screens */
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.rbc-toolbar button:hover,
+.rbc-toolbar button:focus {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  outline: none; /* Remove default focus outline if Bootstrap handles it */
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Bootstrap focus shadow */
+}
+
+.rbc-toolbar button.rbc-active,
+.rbc-toolbar button.rbc-active:hover,
+.rbc-toolbar button.rbc-active:focus {
+  color: #fff;
+  background-color: #0a58ca; /* Darker shade for active */
+  border-color: #0a58ca;
+  box-shadow: none;
+}
+
+/* Spacing for toolbar button groups */
+.rbc-btn-group {
+    margin-bottom: 0.5rem; /* For small screens */
+}
+.rbc-btn-group > button:not(:last-child) {
+    margin-right: 0.25rem; /* Add some space between buttons in a group */
+}
+
+
+/* Style for selected event in the calendar */
+.rbc-event.rbc-selected {
+  background-color: #0d6efd !important; /* Bootstrap primary color, !important to override inline style if necessary */
+  border-color: #0a58ca !important;
+  color: white !important;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.6); /* Make selected event pop */
+  z-index: 10; /* Bring selected event to front */
+}
+
+/* General event styling - base padding. Specific colors/styles are handled by eventPropGetter */
+.rbc-event {
+  padding: 2px 5px;
+  border-radius: 5px; /* Consistent with eventStyleGetter */
+  color: white; /* Assuming most event backgrounds will be dark enough */
+  border: none; /* Reset default border if any */
+  font-size: 0.85em; /* Slightly smaller font for events */
+  line-height: 1.2;
+  overflow: hidden; /* Prevent text overflow from breaking layout */
+  text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+}
+.rbc-event-label { /* For all-day events label */
+    font-size: 0.8em;
+}
+.rbc-event-content {
+  /* CustomEvent component handles content structure */
+  /* If not using CustomEvent, you might style this: */
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+}
+
+
+/* Custom modal styling if needed for vertical centering */
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 1rem);
+}
+
+/* Fix for datetime-local input width */
+input[type="datetime-local"].form-control { /* Be more specific */
+  min-width: 220px; /* Adjust as needed */
+  /* Bootstrap form-control class usually handles responsiveness well,
+     but datetime-local can be tricky. This provides a minimum. */
+}
+
+/* Event Legend Styling */
+.event-legend {
+  padding: 0.75rem 1rem;
+  background-color: #f8f9fa; /* Light background for the legend */
+  border-radius: 0.25rem;
+  margin-bottom: 1rem; /* Space below legend */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
+}
+
+.event-legend h5 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.legend-item {
+  font-size: 0.9rem;
+  /* margin-right will be handled by Bootstrap 'me-3' */
+  /* margin-bottom will be handled by Bootstrap 'mb-1' */
+}
+
+.legend-color-chip {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.1); /* Subtle border for light colors */
+  vertical-align: middle; /* Align with text */
+}
+
+/* Responsive adjustments */
+@media (min-width: 576px) {
+  .modal-dialog-centered {
+    min-height: calc(100% - 3.5rem);
+  }
+  .rbc-toolbar button {
+    margin-bottom: 0; /* Remove bottom margin on larger screens */
+  }
+  .rbc-btn-group {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .rbc-toolbar {
+    flex-direction: column; /* Stack toolbar items on small screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+  .rbc-toolbar .rbc-toolbar-label {
+    margin-bottom: 0.5rem; /* Space below date label */
+    font-size: 1.25rem;
+  }
+  .rbc-btn-group {
+    margin-bottom: 0.5rem; /* Ensure button groups also have margin */
+  }
+  .container-fluid.py-3 { /* Reduce padding on small screens */
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  .page-header-actions { /* For the title and button row */
+    flex-direction: column;
+    align-items: flex-start !important; /* Override Bootstrap's align-items-center */
+  }
+  .page-header-actions .btn {
+    margin-top: 0.5rem; /* Add space above button when wrapped */
+    width: 100%; /* Make button full width on small screens */
+  }
+  .page-header-actions h1.h2 {
+    font-size: 1.5rem; /* Adjust title size */
+  }
+}

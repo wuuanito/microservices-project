@@ -21,9 +21,11 @@ if (-not (Get-Command docker-compose -ErrorAction SilentlyContinue)) {
 }
 
 # Verificar la base de datos MySQL
-Write-Host "Verificando base de datos MySQL local..." -ForegroundColor $Yellow
-Write-Host "Asegúrate de que MySQL esté en ejecución y que la base de datos 'auth_service_db' exista." -ForegroundColor $Yellow
-Write-Host "Puedes crearla manualmente con: CREATE DATABASE IF NOT EXISTS auth_service_db;" -ForegroundColor $Yellow
+Write-Host "Verificando bases de datos MySQL locales..." -ForegroundColor $Yellow
+Write-Host "Asegúrate de que MySQL esté en ejecución y que las bases de datos 'auth_service_db' y 'calendar_service_db' existan." -ForegroundColor $Yellow
+Write-Host "Puedes crearlas manualmente con:" -ForegroundColor $Yellow
+Write-Host "  CREATE DATABASE IF NOT EXISTS auth_service_db;" -ForegroundColor $Yellow
+Write-Host "  CREATE DATABASE IF NOT EXISTS calendar_service_db;" -ForegroundColor $Yellow
 
 # Construir y levantar los contenedores Docker
 Write-Host "Construyendo y levantando los contenedores Docker..." -ForegroundColor $Yellow
@@ -34,20 +36,18 @@ docker-compose up -d
 Write-Host "Verificando el estado de los contenedores..." -ForegroundColor $Yellow
 docker-compose ps
 
-# Ejecutar migraciones para el servicio de autenticación
-Write-Host "Ejecutando migraciones de la base de datos..." -ForegroundColor $Yellow
+# Ejecutar sincronización/migraciones de las bases de datos
+Write-Host "Ejecutando sincronización/migraciones de las bases de datos..." -ForegroundColor $Yellow
+Write-Host "Sincronizando base de datos para Auth Service..." -ForegroundColor $Yellow
 docker-compose exec auth-service npm run migrate
+Write-Host "Sincronizando base de datos para Calendar Service..." -ForegroundColor $Yellow
+docker-compose exec calendar-service npm run sync-db
 
-# Opcional: Cargar datos de prueba
-$response = Read-Host "¿Deseas cargar datos de prueba? (s/n)"
-if ($response -eq "s" -or $response -eq "S") {
-    Write-Host "Cargando datos de prueba..." -ForegroundColor $Yellow
-    docker-compose exec auth-service npx sequelize-cli db:seed:all
-}
 
 Write-Host "=======================================================" -ForegroundColor $Blue
 Write-Host "Servicios iniciados correctamente" -ForegroundColor $Green
 Write-Host "API Gateway: http://localhost:3000" -ForegroundColor $Yellow
-Write-Host "Auth Service: http://localhost:4001" -ForegroundColor $Yellow
-Write-Host "Frontend: http://localhost:80" -ForegroundColor $Yellow
+Write-Host "Frontend Service: http://localhost:5173" -ForegroundColor $Yellow
+Write-Host "Auth Service (directo): http://localhost:4001" -ForegroundColor $Yellow
+Write-Host "Calendar Service (directo): http://localhost:3003" -ForegroundColor $Yellow
 Write-Host "=======================================================" -ForegroundColor $Blue

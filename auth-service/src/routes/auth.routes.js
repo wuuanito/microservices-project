@@ -1,13 +1,13 @@
+// auth-service/src/routes/auth.routes.js - CORREGIDO
 const express = require('express');
 const { body } = require('express-validator');
 const authController = require('../controllers/auth.controller');
 const { validateRequest } = require('../middleware/validate.middleware');
-const { authMiddleware } = require('../middleware/auth.middleware');
+const authMiddleware = require('../middleware/authMiddleware'); // CAMBIADO: sin destructuring
 
 const router = express.Router();
 
 // Register new user
-// auth-service/src/routes/auth.routes.js (actualizar validación en ruta /register)
 router.post(
   '/register',
   [
@@ -65,7 +65,7 @@ router.post(
 router.post('/logout', authMiddleware, authController.logout);
 
 // Get current user profile
-router.get('/me', authMiddleware, authController.getProfile);
+router.get('/profile', authMiddleware, authController.getProfile);
 
 // Change password
 router.put(
@@ -99,5 +99,7 @@ router.post(
   ],
   authController.resetPassword
 );
+
+console.log('🛣️ Auth routes loaded. Available methods:', Object.keys(authController));
 
 module.exports = router;

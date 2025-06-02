@@ -64,7 +64,11 @@ const register = async (req, res, next) => {
   }
 };
 
+
+
 // Login user
+
+// Login user - REEMPLAZAR ESTE MÉTODO
 const login = async (req, res, next) => {
   try {
     const { username, email, password } = req.body;
@@ -100,6 +104,7 @@ const login = async (req, res, next) => {
     // Save refresh token
     await authService.saveRefreshToken(user.id, refreshToken);
     
+    // ARREGLADO: Incluir todos los campos del usuario como en register
     return res.status(200).json(formatResponse({
       user: {
         id: user.id,
@@ -107,7 +112,9 @@ const login = async (req, res, next) => {
         email: user.email,
         firstName: user.firstName,
         lastName: user.lastName,
-        role: user.role
+        role: user.role,
+        department: user.department,  // AGREGADO
+        jobTitle: user.jobTitle       // AGREGADO
       },
       accessToken,
       refreshToken

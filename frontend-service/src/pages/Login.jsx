@@ -1,132 +1,58 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Form, Button, Card, Alert, Spinner } from 'react-bootstrap';
-import { useNavigate, Link } from 'react-router-dom';
-import { useAuth } from '../hooks/useAuth';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../contexts/AuthContext'; // Asegúrate que la ruta es correcta
+import LoginForm from '../components/Auth/LoginForm'; // Asegúrate que este componente existe
 
 const Login = () => {
-  const [credentials, setCredentials] = useState({
-    email: '',
-    password: ''
-  });
-  const [validated, setValidated] = useState(false);
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
-
-  const { login } = useAuth();
+  const { isAuthenticated } = useAuth();
   const navigate = useNavigate();
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setCredentials({
-      ...credentials,
-      [name]: value
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const form = e.currentTarget;
-
-    if (form.checkValidity() === false) {
-      e.stopPropagation();
-      setValidated(true);
-      return;
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate('/calendar', { replace: true });
     }
+  }, [isAuthenticated, navigate]);
 
-    setValidated(true);
-    setLoading(true);
-    setError('');
-
-    try {
-      // Iniciar sesión
-      await login(credentials);
-      
-      // Solución simple: redirigir directamente después de login exitoso
-      navigate('/dashboard');
-      
-      // Recargar la página después de un breve retraso para asegurar que todo se actualice
-      setTimeout(() => {
-        window.location.reload();
-      }, 100);
-      
-    } catch (err) {
-      setError(err.error || 'Error al iniciar sesión. Por favor, verifica tus credenciales.');
-      setLoading(false);
-    }
+  const handleLoginSuccess = () => {
+    navigate('/calendar', { replace: true });
   };
 
   return (
-    <Container className="mt-5">
-      <Row className="justify-content-center">
-        <Col md={6}>
-          <Card>
-            <Card.Body>
-              <Card.Title className="text-center mb-4">Iniciar Sesión</Card.Title>
-              {error && <Alert variant="danger">{error}</Alert>}
-              <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="email">
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control
-                    type="email"
-                    name="email"
-                    value={credentials.email}
-                    onChange={handleChange}
-                    required
-                    placeholder="nombre@ejemplo.com"
-                    disabled={loading}
-                  />
-                  <Form.Control.Feedback type="invalid">
-                    Por favor ingresa un email válido.
-                  </Form.Control.Feedback>
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="password">
-                  <Form.Label>Contraseña</Form.Label>
-                  <Form.Control
-                    type="password"
-                    name="password"
-                    value={credentials.password}
-                    onChange={handleChange}
-                    required
-                    minLength={6}
-                    placeholder="Tu contraseña"
-                    disabled={loading}
-                  />
-                  <Form.Control.Feedback type="invalid">
-                    La contraseña debe tener al menos 6 caracteres.
-                  </Form.Control.Feedback>
-                </Form.Group>
-
-                <div className="d-grid gap-2">
-                  <Button variant="primary" type="submit" disabled={loading}>
-                    {loading ? (
-                      <>
-                        <Spinner
-                          as="span"
-                          animation="border"
-                          size="sm"
-                          role="status"
-                          aria-hidden="true"
-                          className="me-2"
-                        />
-                        Iniciando sesión...
-                      </>
-                    ) : (
-                      'Iniciar Sesión'
-                    )}
-                  </Button>
-                </div>
-              </Form>
-              <div className="text-center mt-3">
-                <p>
-                  ¿No tienes una cuenta? <Link to="/register">Regístrate</Link>
-                </p>
+    <div className="login-container d-flex align-items-center justify-content-center py-3 py-md-5"> {/* Ajuste de padding responsivo */}
+      <div className="container">
+        <div className="row justify-content-center">
+          {/* Columnas ajustadas para un ancho ligeramente mayor y más moderno */}
+          <div className="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+            <div className="card login-card">
+              {/* Header */}
+              <div className="card-header login-header text-center py-4">
+                <h3 className="mb-0 login-title">
+                  <i className="bi bi-building me-2 login-header-icon"></i>
+                  Rioja Nature Pharma
+                </h3>
+                <p className="mb-0 mt-2 login-subtitle">Inicia sesión en tu cuenta</p>
               </div>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+
+              {/* Body */}
+              <div className="card-body p-4 p-lg-5"> {/* Mayor padding en pantallas grandes */}
+                <LoginForm onLoginSuccess={handleLoginSuccess} />
+              </div>
+
+              {/* Footer */}
+              <div className="card-footer text-center py-3 login-footer">
+                <small>
+                  © 2025 Todos los derechos reservados.
+                  <br />
+                  <span className="text-brand-accent fw-bold">
+                    v{import.meta.env.VITE_APP_VERSION || '1.0.0'}
+                  </span>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -4,6 +4,7 @@ Este proyecto implementa una arquitectura de microservicios escalable con los si
 
 - **API Gateway**: Punto de entrada para todas las solicitudes
 - **Auth Service**: Servicio de autenticación y gestión de usuarios
+- **Calendar Service**: Servicio para la gestión de eventos del calendario
 
 ## Requisitos previos
 
@@ -14,22 +15,32 @@ Este proyecto implementa una arquitectura de microservicios escalable con los si
 
 ## Configuración inicial
 
-1. Crea una base de datos MySQL local llamada `auth_service_db`:
+1. Crea las bases de datos MySQL locales:
    ```sql
    CREATE DATABASE auth_service_db;
+   CREATE DATABASE calendar_service_db; -- Nueva base de datos para el servicio de calendario
    ```
 
-2. Asegúrate de que el usuario `root` (u otro usuario configurado) tenga permisos en esta base de datos:
+2. Asegúrate de que el usuario `root` (u otro usuario configurado) tenga permisos en estas bases de datos:
    ```sql
    GRANT ALL PRIVILEGES ON auth_service_db.* TO 'root'@'%';
+   GRANT ALL PRIVILEGES ON calendar_service_db.* TO 'root'@'%'; -- Permisos para la nueva BD
    FLUSH PRIVILEGES;
    ```
 
-3. Sincroniza la estructura de la base de datos:
-   ```powershell
-   cd microservices-project\auth-service
-   node .\src\sync-db.js
-   ```
+3. Sincroniza la estructura de las bases de datos:
+   - Para el servicio de autenticación:
+     ```powershell
+     cd microservices-project\auth-service
+     node .\src\sync-db.js
+     cd ..\..
+     ```
+   - Para el servicio de calendario:
+     ```powershell
+     cd microservices-project\calendar-service
+     node .\src\database\sync-db.js
+     cd ..\..
+     ```
 
 4. Inicia los servicios:
    ```powershell
@@ -44,6 +55,35 @@ Este proyecto implementa una arquitectura de microservicios escalable con los si
 Todos los endpoints se acceden a través del API Gateway en `http://localhost:3000`.
 
 ### Autenticación y Gestión de Usuarios
+
+(Endpoints gestionados por `auth-service`)
+
+| Método | Endpoint | Descripción | Autenticación | Cuerpo de la solicitud |
+|--------|----------|-------------|---------------|------------------------|
+| GET | `/health` | Verificar estado del API Gateway | No | - |
+| GET | `/diagnose` | Diagnóstico de servicios | No | - |
+| POST | `/auth/register` | Registrar nuevo usuario | No | `username`, `email`, `password`, `firstName`, `lastName`, `department`, `role`, `jobTitle` |
+| POST | `/auth/login` | Iniciar sesión | No | `username`/`email`, `password` |
+| POST | `/auth/refresh-token` | Renovar token de acceso | No | `refreshToken` |
+| POST | `/auth/logout` | Cerrar sesión | Sí | `refreshToken` |
+| GET | `/auth/me` | Obtener perfil del usuario actual | Sí | - |
+| PUT | `/auth/change-password` | Cambiar contraseña | Sí | `currentPassword`, `newPassword` |
+| POST | `/auth/forgot-password` | Solicitar restablecimiento de contraseña | No | `email` |
+| POST | `/auth/reset-password` | Restablecer contraseña | No | `token`, `newPassword` |
+
+### Gestión de Eventos del Calendario
+
+(Endpoints gestionados por `calendar-service`, accesibles a través de `/calendar` en el API Gateway)
+
+| Método | Endpoint                      | Descripción                                  | Autenticación | Cuerpo de la solicitud (ejemplo)                                                                                                                               |
+|--------|-------------------------------|----------------------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| POST   | `/calendar/api/events`        | Crear un nuevo evento                        | Sí            | `{ "title": "Reunión de equipo", "description": "Discutir avances", "responsible": "usuario_id", "participants": ["id1", "id2"], "roomReserved": "Sala A", "startTime": "2024-07-30T10:00:00Z", "endTime": "2024-07-30T11:00:00Z" }` |
+| GET    | `/calendar/api/events`        | Obtener todos los eventos (con filtros opcionales) | Sí            | Query params: `startDate`, `endDate`, `responsible`, `room`                                                                                                    |
+| GET    | `/calendar/api/events/:id`    | Obtener un evento por ID                     | Sí            | -                                                                                                                                                            |
+| PUT    | `/calendar/api/events/:id`    | Actualizar un evento existente               | Sí            | `{ "title": "Reunión de equipo (Actualizado)", ... }`                                                                                                       |
+| DELETE | `/calendar/api/events/:id`    | Eliminar (soft delete) un evento             | Sí            | -                                                                                                                                                            |
+
+### Autenticación y Gestión de Usuarios (Original - mantener por si acaso, pero la tabla de arriba es la correcta)
 
 | Método | Endpoint | Descripción | Autenticación | Cuerpo de la solicitud |
 |--------|----------|-------------|---------------|------------------------|
@@ -177,6 +217,8 @@ El sistema utiliza autenticación basada en JWT (JSON Web Tokens):
 ```powershell
 .\logs.ps1 api-gateway
 .\logs.ps1 auth-service
+.\logs.ps1 calendar-service # Logs para el nuevo servicio
+.\logs.ps1 frontend-service # Logs para el frontend
 .\logs.ps1 all
 ```
 
@@ -185,22 +227,32 @@ El sistema utiliza autenticación basada en JWT (JSON Web Tokens):
 microservices-project/
 ├── api-gateway/           # Servicio de API Gateway
 ├── auth-service/          # Servicio de autenticación
+├── calendar-service/      # Servicio de calendario (NUEVO)
+├── frontend-service/      # Servicio de frontend
 ├── docker-compose.yml     # Configuración de Docker Compose
-├── .env                   # Variables de entorno
+├── .env                   # Variables de entorno (ver .env.example en cada servicio)
 ├── start.ps1              # Script para iniciar los servicios
 ├── stop.ps1               # Script para detener los servicios
 ├── status.ps1             # Script para verificar el estado
 └── logs.ps1               # Script para ver logs
 ```
 
-## Sincronización de la base de datos
+## Sincronización de las bases de datos
 
-Para sincronizar o reiniciar la base de datos (esto eliminará todos los datos existentes):
+Para sincronizar o reiniciar las bases de datos (esto eliminará todos los datos existentes):
 
-```powershell
-cd microservices-project\auth-service
-node .\src\sync-db.js
-```
+- **Auth Service DB**:
+  ```powershell
+  cd microservices-project\auth-service
+  node .\src\sync-db.js
+  cd ..\..
+  ```
+- **Calendar Service DB**:
+  ```powershell
+  cd microservices-project\calendar-service
+  node .\src\database\sync-db.js
+  cd ..\..
+  ```
 
 ## Usuario administrador predeterminado
 
@@ -217,14 +269,14 @@ Después de sincronizar la base de datos, se crea un usuario administrador con l
 ### Problemas de conexión a la base de datos
 
 1. Verifica que MySQL esté en ejecución
-2. Asegúrate de que la base de datos `auth_service_db` exista
-3. Verifica que el usuario configurado tenga permisos en esta base de datos
+2. Asegúrate de que las bases de datos `auth_service_db` y `calendar_service_db` existan
+3. Verifica que el usuario configurado tenga permisos en estas bases de datos
 4. Comprueba que las credenciales en los archivos de configuración sean correctas
 
 ### Problemas con el API Gateway
 
 1. Verifica que ambos servicios estén en ejecución con `.\status.ps1`
-2. Revisa los logs con `.\logs.ps1 api-gateway` o `.\logs.ps1 auth-service`
+2. Revisa los logs con `.\logs.ps1 api-gateway`, `.\logs.ps1 auth-service`, o `.\logs.ps1 calendar-service`
 3. Comprueba la conectividad con el endpoint de diagnóstico: `GET http://localhost:3000/diagnose`
 
 ### Errores comunes
