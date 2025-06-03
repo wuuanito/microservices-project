@@ -28,6 +28,11 @@ const startServer = async () => {
     await sequelize.authenticate();
     logger.info('Database connection established successfully');
     
+    // Sincronizar modelos con la base de datos
+    // Esto creará las tablas si no existen, o las actualizará si hay cambios
+    await sequelize.sync({ alter: true });
+    logger.info('Database synchronized successfully');
+    
     app.listen(config.port, () => {
       logger.info(`Auth service running on port ${config.port}`);
     });

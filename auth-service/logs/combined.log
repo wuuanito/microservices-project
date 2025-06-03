@@ -457,3 +457,34 @@
 [2025-06-02T10:50:29.750Z] INFO: ::ffff:172.18.0.4 - - [02/Jun/2025:10:50:29 +0000] "GET /api/auth/profile HTTP/1.1" 401 80 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
 [2025-06-02T10:50:29.758Z] INFO: ::ffff:172.18.0.4 - - [02/Jun/2025:10:50:29 +0000] "POST /api/auth/refresh-token HTTP/1.1" 401 33 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
 [2025-06-02T10:50:29.794Z] INFO: ::ffff:172.18.0.4 - - [02/Jun/2025:10:50:29 +0000] "POST /api/auth/refresh-token HTTP/1.1" 401 33 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-06-03T11:59:33.627Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-06-03T11:59:35.159Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-06-03T11:59:36.643Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-06-03T11:59:38.075Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-06-03T11:59:39.800Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-06-03T11:59:42.253Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-06-03T11:59:49.147Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-06-03T11:59:56.388Z] INFO: Database connection established successfully
+[2025-06-03T11:59:56.390Z] INFO: Auth service running on port 4001
+[2025-06-03T12:40:38.547Z] ERROR: Error finding user by username or email: Table 'auth_service_db.users' doesn't exist
+[2025-06-03T12:40:38.548Z] ERROR: Error: Error finding user
+[2025-06-03T12:40:38.562Z] INFO: ::ffff:172.18.0.3 - - [03/Jun/2025:12:40:38 +0000] "POST /api/auth/login HTTP/1.1" 500 68 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:40:43.653Z] ERROR: Error finding user by username or email: Table 'auth_service_db.users' doesn't exist
+[2025-06-03T12:40:43.655Z] ERROR: Error: Error finding user
+[2025-06-03T12:40:43.655Z] INFO: ::ffff:172.18.0.3 - - [03/Jun/2025:12:40:43 +0000] "POST /api/auth/register HTTP/1.1" 500 71 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:41:10.212Z] INFO: ::ffff:172.18.0.3 - - [03/Jun/2025:12:41:10 +0000] "GET /health HTTP/1.1" 200 15 "-" "axios/1.9.0"
+[2025-06-03T12:41:22.071Z] ERROR: Error finding user by username or email: Table 'auth_service_db.users' doesn't exist
+[2025-06-03T12:41:22.071Z] ERROR: Error: Error finding user
+[2025-06-03T12:41:22.072Z] INFO: ::ffff:172.18.0.3 - - [03/Jun/2025:12:41:22 +0000] "POST /api/auth/register HTTP/1.1" 500 71 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:51:44.549Z] INFO: Database connection established successfully
+[2025-06-03T12:51:44.705Z] INFO: Database synchronized successfully
+[2025-06-03T12:51:44.707Z] INFO: Auth service running on port 4001
+[2025-06-03T12:52:12.341Z] INFO: ::ffff:172.18.0.4 - - [03/Jun/2025:12:52:12 +0000] "POST /api/auth/login HTTP/1.1" 401 31 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:52:15.438Z] INFO: ::ffff:172.18.0.4 - - [03/Jun/2025:12:52:15 +0000] "POST /api/auth/register HTTP/1.1" 201 800 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:52:19.007Z] INFO: ::ffff:172.18.0.4 - - [03/Jun/2025:12:52:19 +0000] "POST /api/auth/login HTTP/1.1" 200 788 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:52:24.413Z] INFO: ::ffff:172.18.0.4 - - [03/Jun/2025:12:52:24 +0000] "GET /api/auth/me HTTP/1.1" 404 27 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:52:43.899Z] INFO: ::ffff:172.18.0.4 - - [03/Jun/2025:12:52:43 +0000] "POST /api/auth/refresh-token HTTP/1.1" 400 103 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:52:50.246Z] INFO: ::ffff:172.18.0.4 - - [03/Jun/2025:12:52:50 +0000] "POST /api/auth/logout HTTP/1.1" 401 86 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T13:14:52.049Z] INFO: Database connection established successfully
+[2025-06-03T13:14:52.577Z] INFO: Database synchronized successfully
+[2025-06-03T13:14:52.579Z] INFO: Auth service running on port 4001

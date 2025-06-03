@@ -15,38 +15,32 @@ Este proyecto implementa una arquitectura de microservicios escalable con los si
 
 ## Configuración inicial
 
-1. Crea las bases de datos MySQL locales:
+### 🚀 Inicio Rápido con Sincronización Automática (Recomendado)
+
+```powershell
+# Opción 1: Script automatizado que incluye inicialización de BD
+.\start-with-db-init.ps1
+
+# Opción 2: Comandos paso a paso
+npm install
+npm run init-db
+docker-compose up -d
+```
+
+### 📋 Configuración Manual (Alternativa)
+
+1. **Crear las bases de datos manualmente:**
    ```sql
    CREATE DATABASE auth_service_db;
-   CREATE DATABASE calendar_service_db; -- Nueva base de datos para el servicio de calendario
+   CREATE DATABASE calendar_service_db;
    ```
 
-2. Asegúrate de que el usuario `root` (u otro usuario configurado) tenga permisos en estas bases de datos:
-   ```sql
-   GRANT ALL PRIVILEGES ON auth_service_db.* TO 'root'@'%';
-   GRANT ALL PRIVILEGES ON calendar_service_db.* TO 'root'@'%'; -- Permisos para la nueva BD
-   FLUSH PRIVILEGES;
-   ```
-
-3. Sincroniza la estructura de las bases de datos:
-   - Para el servicio de autenticación:
-     ```powershell
-     cd microservices-project\auth-service
-     node .\src\sync-db.js
-     cd ..\..
-     ```
-   - Para el servicio de calendario:
-     ```powershell
-     cd microservices-project\calendar-service
-     node .\src\database\sync-db.js
-     cd ..\..
-     ```
-
-4. Inicia los servicios:
-   ```powershell
-   cd microservices-project
+2. **Iniciar los servicios:**
+   ```bash
    .\start.ps1
    ```
+
+> **✨ Novedad**: Ahora las bases de datos y tablas se crean/actualizan automáticamente al iniciar los contenedores. Ver [DATABASE_SYNC_README.md](DATABASE_SYNC_README.md) para más detalles.
 
 ## Endpoints de la API
 
@@ -218,7 +212,7 @@ El sistema utiliza autenticación basada en JWT (JSON Web Tokens):
 .\logs.ps1 api-gateway
 .\logs.ps1 auth-service
 .\logs.ps1 calendar-service # Logs para el nuevo servicio
-.\logs.ps1 frontend-service # Logs para el frontend
+
 .\logs.ps1 all
 ```
 
@@ -228,7 +222,7 @@ microservices-project/
 ├── api-gateway/           # Servicio de API Gateway
 ├── auth-service/          # Servicio de autenticación
 ├── calendar-service/      # Servicio de calendario (NUEVO)
-├── frontend-service/      # Servicio de frontend
+
 ├── docker-compose.yml     # Configuración de Docker Compose
 ├── .env                   # Variables de entorno (ver .env.example en cada servicio)
 ├── start.ps1              # Script para iniciar los servicios

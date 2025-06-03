@@ -1,0 +1,598 @@
+{
+	"info": {
+		"_postman_id": "12345678-1234-1234-1234-123456789012",
+		"name": "Arquitectura de Microservicios - Colección Completa",
+		"description": "Colección completa para probar toda la arquitectura de microservicios incluyendo API Gateway, Auth Service y Calendar Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "🔧 Health & Diagnostics",
+			"item": [
+				{
+					"name": "Health Check - API Gateway",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/health",
+							"host": ["{{base_url}}"],
+							"path": ["health"]
+						},
+						"description": "Verificar el estado del API Gateway"
+					},
+					"response": []
+				},
+				{
+					"name": "Diagnose Services",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/diagnose",
+							"host": ["{{base_url}}"],
+							"path": ["diagnose"]
+						},
+						"description": "Diagnóstico de todos los servicios conectados"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "🔐 Authentication Service",
+			"item": [
+				{
+					"name": "Register User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 201) {",
+									"    const response = pm.response.json();",
+									"    if (response.user && response.user.id) {",
+									"        pm.environment.set('user_id', response.user.id);",
+									"    }",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"tecnico1\",\n  \"email\": \"tecnico1@example.com\",\n  \"password\": \"password123\",\n  \"firstName\": \"Carlos\",\n  \"lastName\": \"Técnico\",\n  \"department\": \"informatica\",\n  \"role\": \"empleado\",\n  \"jobTitle\": \"Técnico de Sistemas\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/register",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "register"]
+						},
+						"description": "Registrar un nuevo usuario en el sistema"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 200) {",
+									"    const response = pm.response.json();",
+									"    pm.environment.set('access_token', response.accessToken);",
+									"    pm.environment.set('refresh_token', response.refreshToken);",
+									"    if (response.user && response.user.id) {",
+									"        pm.environment.set('user_id', response.user.id);",
+									"    }",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"tecnico1@example.com\",\n  \"password\": \"password123\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/login",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "login"]
+						},
+						"description": "Iniciar sesión con credenciales de usuario"
+					},
+					"response": []
+				},
+				{
+					"name": "Login Admin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 200) {",
+									"    const response = pm.response.json();",
+									"    pm.environment.set('access_token', response.accessToken);",
+									"    pm.environment.set('refresh_token', response.refreshToken);",
+									"    if (response.user && response.user.id) {",
+									"        pm.environment.set('user_id', response.user.id);",
+									"    }",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"admin@example.com\",\n  \"password\": \"admin123\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/login",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "login"]
+						},
+						"description": "Iniciar sesión con usuario administrador predeterminado"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/auth/me",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "me"]
+						},
+						"description": "Obtener el perfil del usuario autenticado"
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"currentPassword\": \"password123\",\n  \"newPassword\": \"newpassword123\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/change-password",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "change-password"]
+						},
+						"description": "Cambiar la contraseña del usuario autenticado"
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 200) {",
+									"    const response = pm.response.json();",
+									"    pm.environment.set('access_token', response.accessToken);",
+									"    if (response.refreshToken) {",
+									"        pm.environment.set('refresh_token', response.refreshToken);",
+									"    }",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"refreshToken\": \"{{refresh_token}}\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/refresh-token",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "refresh-token"]
+						},
+						"description": "Renovar el token de acceso usando el refresh token"
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"tecnico1@example.com\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/forgot-password",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "forgot-password"]
+						},
+						"description": "Solicitar restablecimiento de contraseña"
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"token\": \"RESET_TOKEN_HERE\",\n  \"newPassword\": \"newpassword123\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/reset-password",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "reset-password"]
+						},
+						"description": "Restablecer contraseña con token de restablecimiento"
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"refreshToken\": \"{{refresh_token}}\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/logout",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "logout"]
+						},
+						"description": "Cerrar sesión del usuario"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "📅 Calendar Service",
+			"item": [
+				{
+					"name": "Get All Events",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/calendar/api/events",
+							"host": ["{{base_url}}"],
+							"path": ["calendar", "api", "events"]
+						},
+						"description": "Obtener todos los eventos del calendario"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Events with Filters",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/calendar/api/events?startDate=2024-01-01&endDate=2024-12-31&responsible={{user_id}}&room=Sala A",
+							"host": ["{{base_url}}"],
+							"path": ["calendar", "api", "events"],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "endDate",
+									"value": "2024-12-31"
+								},
+								{
+									"key": "responsible",
+									"value": "{{user_id}}"
+								},
+								{
+									"key": "room",
+									"value": "Sala A"
+								}
+							]
+						},
+						"description": "Obtener eventos con filtros opcionales (fechas, responsable, sala)"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 201) {",
+									"    const response = pm.response.json();",
+									"    if (response.id) {",
+									"        pm.environment.set('event_id', response.id);",
+									"    }",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Reunión de equipo\",\n  \"description\": \"Discutir avances del proyecto y próximos pasos\",\n  \"responsible\": \"{{user_id}}\",\n  \"participants\": [\"{{user_id}}\"],\n  \"roomReserved\": \"Sala A\",\n  \"startTime\": \"2024-07-30T10:00:00Z\",\n  \"endTime\": \"2024-07-30T11:00:00Z\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/calendar/api/events",
+							"host": ["{{base_url}}"],
+							"path": ["calendar", "api", "events"]
+						},
+						"description": "Crear un nuevo evento en el calendario"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Event by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/calendar/api/events/{{event_id}}",
+							"host": ["{{base_url}}"],
+							"path": ["calendar", "api", "events", "{{event_id}}"]
+						},
+						"description": "Obtener un evento específico por su ID"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Event",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Reunión de equipo (Actualizada)\",\n  \"description\": \"Discutir avances del proyecto, próximos pasos y revisión de tareas\",\n  \"responsible\": \"{{user_id}}\",\n  \"participants\": [\"{{user_id}}\"],\n  \"roomReserved\": \"Sala B\",\n  \"startTime\": \"2024-07-30T14:00:00Z\",\n  \"endTime\": \"2024-07-30T15:30:00Z\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/calendar/api/events/{{event_id}}",
+							"host": ["{{base_url}}"],
+							"path": ["calendar", "api", "events", "{{event_id}}"]
+						},
+						"description": "Actualizar un evento existente"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Event",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{access_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/calendar/api/events/{{event_id}}",
+							"host": ["{{base_url}}"],
+							"path": ["calendar", "api", "events", "{{event_id}}"]
+						},
+						"description": "Eliminar un evento (soft delete)"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "👥 User Management Examples",
+			"item": [
+				{
+					"name": "Register - Administrador",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"admin_rrhh\",\n  \"email\": \"admin.rrhh@example.com\",\n  \"password\": \"admin123\",\n  \"firstName\": \"María\",\n  \"lastName\": \"Administradora\",\n  \"department\": \"rrhh\",\n  \"role\": \"administrador\",\n  \"jobTitle\": \"Jefe de Recursos Humanos\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/register",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "register"]
+						},
+						"description": "Registrar usuario con rol de administrador"
+					},
+					"response": []
+				},
+				{
+					"name": "Register - Director",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"director_general\",\n  \"email\": \"director@example.com\",\n  \"password\": \"director123\",\n  \"firstName\": \"Juan\",\n  \"lastName\": \"Director\",\n  \"department\": \"gerencia\",\n  \"role\": \"director\",\n  \"jobTitle\": \"Director General\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/register",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "register"]
+						},
+						"description": "Registrar usuario con rol de director"
+					},
+					"response": []
+				},
+				{
+					"name": "Register - Empleado Producción",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"operario1\",\n  \"email\": \"operario1@example.com\",\n  \"password\": \"operario123\",\n  \"firstName\": \"Pedro\",\n  \"lastName\": \"Operario\",\n  \"department\": \"produccion\",\n  \"role\": \"empleado\",\n  \"jobTitle\": \"Operario de Producción\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/register",
+							"host": ["{{base_url}}"],
+							"path": ["auth", "register"]
+						},
+						"description": "Registrar empleado del departamento de producción"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		},
+		{
+			"key": "access_token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "refresh_token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "user_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "event_id",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

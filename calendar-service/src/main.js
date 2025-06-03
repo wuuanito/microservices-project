@@ -5,6 +5,9 @@ const sequelize = require('./database/sequelize');
 const eventRoutes = require('./routes/event.routes');
 const { formatResponse } = require('./utils/response-formatter');
 
+// Importar modelos para que Sequelize los reconozca durante la sincronización
+require('./models/event.model');
+
 const app = express();
 const PORT = process.env.PORT || 3003;
 
@@ -30,9 +33,11 @@ const startServer = async () => {
   try {
     await sequelize.authenticate();
     console.log('Database connection has been established successfully.');
-    // Sincronizar modelos (opcional, usar con precaución en producción)
-    // await sequelize.sync({ alter: true }); // o { force: true } para desarrollo
-    // console.log('All models were synchronized successfully.');
+    
+    // Sincronizar modelos con la base de datos
+    // Esto creará las tablas si no existen, o las actualizará si hay cambios
+    await sequelize.sync({ alter: true });
+    console.log('All models were synchronized successfully.');
 
     app.listen(PORT, () => {
       console.log(`Calendar Service listening on port ${PORT}`);

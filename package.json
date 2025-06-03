@@ -1,0 +1,32 @@
+{
+  "name": "microservices-project",
+  "version": "1.0.0",
+  "description": "Arquitectura de microservicios con sincronización automática de bases de datos",
+  "main": "index.js",
+  "scripts": {
+    "init-db": "node init-databases.js",
+    "start": "npm run init-db && docker-compose up -d",
+    "stop": "docker-compose down",
+    "restart": "docker-compose restart",
+    "logs": "docker-compose logs -f",
+    "build": "docker-compose build"
+  },
+  "keywords": [
+    "microservices",
+    "nodejs",
+    "docker",
+    "mysql",
+    "sequelize"
+  ],
+  "author": "Desarrollo Team",
+  "license": "MIT",
+  "dependencies": {
+    "mysql2": "^3.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

@@ -47,3 +47,16 @@
 [2025-06-02T07:06:22.829Z] ERROR: Error: Failed to save refresh token
 [2025-06-02T07:06:47.821Z] ERROR: Failed to save refresh token: Unknown column 'userId' in 'field list'
 [2025-06-02T07:06:47.821Z] ERROR: Error: Failed to save refresh token
+[2025-06-03T11:59:33.627Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-06-03T11:59:35.159Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-06-03T11:59:36.643Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-06-03T11:59:38.075Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-06-03T11:59:39.800Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-06-03T11:59:42.253Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-06-03T11:59:49.147Z] ERROR: Unable to connect to the database: Unknown database 'auth_service_db'
+[2025-06-03T12:40:38.547Z] ERROR: Error finding user by username or email: Table 'auth_service_db.users' doesn't exist
+[2025-06-03T12:40:38.548Z] ERROR: Error: Error finding user
+[2025-06-03T12:40:43.653Z] ERROR: Error finding user by username or email: Table 'auth_service_db.users' doesn't exist
+[2025-06-03T12:40:43.655Z] ERROR: Error: Error finding user
+[2025-06-03T12:41:22.071Z] ERROR: Error finding user by username or email: Table 'auth_service_db.users' doesn't exist
+[2025-06-03T12:41:22.071Z] ERROR: Error: Error finding user

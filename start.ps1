@@ -47,7 +47,7 @@ docker-compose exec calendar-service npm run sync-db
 Write-Host "=======================================================" -ForegroundColor $Blue
 Write-Host "Servicios iniciados correctamente" -ForegroundColor $Green
 Write-Host "API Gateway: http://localhost:3000" -ForegroundColor $Yellow
-Write-Host "Frontend Service: http://localhost:5173" -ForegroundColor $Yellow
+
 Write-Host "Auth Service (directo): http://localhost:4001" -ForegroundColor $Yellow
 Write-Host "Calendar Service (directo): http://localhost:3003" -ForegroundColor $Yellow
 Write-Host "=======================================================" -ForegroundColor $Blue

@@ -3764,3 +3764,38 @@
 [2025-06-02T10:55:26.496Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
 [2025-06-02T10:55:26.520Z] INFO: Received response from Calendar Service: 304
 [2025-06-02T10:55:26.520Z] INFO: ::ffff:172.18.0.1 - - [02/Jun/2025:10:55:26 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
+[2025-06-03T11:59:33.229Z] INFO: API Gateway running on port 3000
+[2025-06-03T12:40:38.462Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-03T12:40:38.561Z] INFO: Received response from Auth Service: 500
+[2025-06-03T12:40:38.564Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:12:40:38 +0000] "POST /auth/login HTTP/1.1" 500 68 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:40:43.643Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-06-03T12:40:43.655Z] INFO: Received response from Auth Service: 500
+[2025-06-03T12:40:43.656Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:12:40:43 +0000] "POST /auth/register HTTP/1.1" 500 71 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:41:05.799Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:12:41:05 +0000] "GET /health HTTP/1.1" 200 50 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:41:10.216Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:12:41:10 +0000] "GET /diagnose HTTP/1.1" 200 201 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:41:22.049Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-06-03T12:41:22.072Z] INFO: Received response from Auth Service: 500
+[2025-06-03T12:41:22.073Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:12:41:22 +0000] "POST /auth/register HTTP/1.1" 500 71 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:51:43.750Z] INFO: API Gateway running on port 3000
+[2025-06-03T12:52:12.286Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-03T12:52:12.341Z] INFO: Received response from Auth Service: 401
+[2025-06-03T12:52:12.344Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:12:52:12 +0000] "POST /auth/login HTTP/1.1" 401 31 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:52:15.325Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-06-03T12:52:15.438Z] INFO: Received response from Auth Service: 201
+[2025-06-03T12:52:15.439Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:12:52:15 +0000] "POST /auth/register HTTP/1.1" 201 800 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:52:18.919Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-03T12:52:19.008Z] INFO: Received response from Auth Service: 200
+[2025-06-03T12:52:19.009Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:12:52:19 +0000] "POST /auth/login HTTP/1.1" 200 788 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:52:24.409Z] INFO: Proxying GET /auth/me to Auth Service at http://auth-service:4001/api/auth/api/auth/me
+[2025-06-03T12:52:24.413Z] INFO: Received response from Auth Service: 404
+[2025-06-03T12:52:24.415Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:12:52:24 +0000] "GET /auth/me HTTP/1.1" 404 27 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:52:43.895Z] INFO: Proxying POST /auth/refresh-token to Auth Service at http://auth-service:4001/api/auth/api/auth/refresh-token
+[2025-06-03T12:52:43.899Z] INFO: Received response from Auth Service: 400
+[2025-06-03T12:52:43.901Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:12:52:43 +0000] "POST /auth/refresh-token HTTP/1.1" 400 103 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:52:50.241Z] INFO: Proxying POST /auth/logout to Auth Service at http://auth-service:4001/api/auth/api/auth/logout
+[2025-06-03T12:52:50.246Z] INFO: Received response from Auth Service: 401
+[2025-06-03T12:52:50.247Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:12:52:50 +0000] "POST /auth/logout HTTP/1.1" 401 86 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T12:52:56.268Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-03T12:52:56.350Z] INFO: Received response from Calendar Service: 200
+[2025-06-03T12:52:56.351Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:12:52:56 +0000] "GET /calendar/api/events HTTP/1.1" 200 57 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T13:14:51.624Z] INFO: API Gateway running on port 3000
