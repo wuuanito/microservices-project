@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const config = require('../config/app.config');
 const logger = require('../utils/logger');
 
-const authMiddleware = (req, res, next) => {
+const authenticateToken = (req, res, next) => {
   try {
     const authHeader = req.headers.authorization;
     
@@ -27,4 +27,4 @@ const authMiddleware = (req, res, next) => {
   }
 };
 
-module.exports = { authMiddleware };
+module.exports = { authenticateToken };
