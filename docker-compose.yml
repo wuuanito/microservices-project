@@ -68,6 +68,32 @@ services:
       - "host.docker.internal:host-gateway"
     restart: unless-stopped
 
+  # Ticket Service
+  ticket-service:
+    build: ./ticket-service
+    container_name: ticket-service
+    ports:
+      - "${TICKET_SERVICE_PORT:-4003}:4003"
+    environment:
+      - NODE_ENV=development
+      - PORT=4003
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - TICKET_DB_NAME=${TICKET_DB_NAME:-ticket_service_db}
+      - AUTH_SERVICE_URL=http://auth-service:4001
+      - JWT_SECRET=${JWT_SECRET}
+      - CORS_ORIGIN=*
+    depends_on:
+      - auth-service
+    networks:
+      - microservices-network
+    volumes:
+      - ./ticket-service:/app
+      - /app/node_modules
+    restart: unless-stopped
+
 networks:
   microservices-network:
     driver: bridge

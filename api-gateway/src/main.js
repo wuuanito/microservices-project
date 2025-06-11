@@ -4,6 +4,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const logger = require('./utils/logger');
+const { authMiddleware } = require('./middleware/auth.middleware');
 const config = require('./config/app.config');
 
 const app = express();
@@ -53,12 +54,13 @@ app.get('/diagnose', async (req, res) => {
   }
 });
 
-// Proxy setup for auth service
-app.use('/auth', createProxyMiddleware({
+// Proxy setup for specific auth service routes (e.g., login, register, refresh-token)
+// These routes should NOT use the authMiddleware
+app.use(['/auth/login', '/auth/register', '/auth/refresh-token', '/auth/logout'], createProxyMiddleware({
   target: config.authServiceUrl,
   changeOrigin: true,
   pathRewrite: {
-    '^/auth': '/api/auth'  // Esto debería hacer que /auth/register se convierta en /api/auth/register
+    '^/auth': '/api/auth' //  /auth/login -> /api/auth/login, /auth/refresh-token -> /api/auth/refresh-token
   },
   logLevel: 'debug',
   onProxyReq: (proxyReq, req, res) => {
@@ -78,6 +80,41 @@ app.use('/auth', createProxyMiddleware({
     res.status(502).json({
       error: 'Bad Gateway',
       message: 'Error connecting to authentication service',
+      details: err.toString()
+    });
+  }
+}));
+
+// Proxy setup for other /auth routes that might require authentication (if any)
+// For example, if you had a /auth/me endpoint to get user details
+// This example assumes all other /auth routes are handled by the specific proxy above or don't exist.
+// If you have other /auth/* endpoints that DO require authentication, they would need a separate proxy setup WITH authMiddleware.
+
+// Proxy setup for tickets service
+app.use('/tickets', authMiddleware, createProxyMiddleware({
+  target: config.ticketsServiceUrl,
+  changeOrigin: true,
+  pathRewrite: {
+    '^/tickets': '' // Remove /tickets prefix, the service already handles /api/tickets
+  },
+  logLevel: 'debug',
+  onProxyReq: (proxyReq, req, res) => {
+    if (req.body) {
+      const bodyData = JSON.stringify(req.body);
+      proxyReq.setHeader('Content-Type', 'application/json');
+      proxyReq.setHeader('Content-Length', Buffer.byteLength(bodyData));
+      proxyReq.write(bodyData);
+    }
+    logger.info(`Proxying ${req.method} ${req.originalUrl} to Tickets Service. Target: ${config.ticketsServiceUrl}, Rewritten Path: ${proxyReq.path}`);
+  },
+  onProxyRes: (proxyRes, req, res) => {
+    logger.info(`Received response from Tickets Service: ${proxyRes.statusCode}`);
+  },
+  onError: (err, req, res) => {
+    logger.error(`Proxy error to Tickets Service: ${err.toString()}`);
+    res.status(502).json({
+      error: 'Bad Gateway',
+      message: 'Error connecting to tickets service',
       details: err.toString()
     });
   }

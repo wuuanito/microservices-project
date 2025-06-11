@@ -3799,3 +3799,490 @@
 [2025-06-03T12:52:56.350Z] INFO: Received response from Calendar Service: 200
 [2025-06-03T12:52:56.351Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:12:52:56 +0000] "GET /calendar/api/events HTTP/1.1" 200 57 "-" "PostmanRuntime/7.44.0"
 [2025-06-03T13:14:51.624Z] INFO: API Gateway running on port 3000
+[2025-06-03T14:30:56.786Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-03T14:30:57.235Z] INFO: Received response from Auth Service: 401
+[2025-06-03T14:30:57.238Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:14:30:57 +0000] "POST /auth/login HTTP/1.1" 401 31 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T14:31:01.777Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-03T14:31:01.920Z] INFO: Received response from Auth Service: 200
+[2025-06-03T14:31:01.922Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:14:31:01 +0000] "POST /auth/login HTTP/1.1" 200 788 "-" "PostmanRuntime/7.44.0"
+[2025-06-03T14:51:03.279Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-03T14:51:03.712Z] INFO: Received response from Auth Service: 200
+[2025-06-03T14:51:03.715Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:14:51:03 +0000] "POST /auth/login HTTP/1.1" 200 788 "http://localhost:4202/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-03T14:51:22.700Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-03T14:51:22.809Z] INFO: Received response from Auth Service: 200
+[2025-06-03T14:51:22.811Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:14:51:22 +0000] "POST /auth/login HTTP/1.1" 200 788 "http://localhost:4202/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-03T14:56:42.158Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-03T14:56:42.301Z] INFO: Received response from Auth Service: 200
+[2025-06-03T14:56:42.317Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:14:56:42 +0000] "POST /auth/login HTTP/1.1" 200 788 "http://localhost:4202/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-03T14:58:10.610Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-03T14:58:10.716Z] INFO: Received response from Auth Service: 200
+[2025-06-03T14:58:10.719Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:14:58:10 +0000] "POST /auth/login HTTP/1.1" 200 788 "http://localhost:4202/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-03T14:58:53.289Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-03T14:58:53.392Z] INFO: Received response from Auth Service: 200
+[2025-06-03T14:58:53.392Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:14:58:53 +0000] "POST /auth/login HTTP/1.1" 200 788 "http://localhost:4202/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-03T15:02:16.889Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-03T15:02:16.986Z] INFO: Received response from Auth Service: 200
+[2025-06-03T15:02:16.987Z] INFO: ::ffff:172.18.0.1 - - [03/Jun/2025:15:02:16 +0000] "POST /auth/login HTTP/1.1" 200 788 "http://localhost:4202/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T10:11:45.390Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-04T10:11:45.677Z] INFO: Received response from Auth Service: 200
+[2025-06-04T10:11:45.679Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:10:11:45 +0000] "POST /auth/login HTTP/1.1" 200 788 "-" "PostmanRuntime/7.44.0"
+[2025-06-04T10:31:08.886Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-04T10:31:09.083Z] INFO: Received response from Auth Service: 200
+[2025-06-04T10:31:09.085Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:10:31:09 +0000] "POST /auth/login HTTP/1.1" 200 788 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T10:44:14.259Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-04T10:44:14.369Z] INFO: Received response from Auth Service: 200
+[2025-06-04T10:44:14.370Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:10:44:14 +0000] "POST /auth/login HTTP/1.1" 200 788 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:14:24.385Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:14:24.799Z] INFO: Received response from Calendar Service: 200
+[2025-06-04T12:14:24.801Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:14:24 +0000] "GET /calendar/api/events HTTP/1.1" 200 57 "-" "PostmanRuntime/7.44.0"
+[2025-06-04T12:14:35.477Z] INFO: Proxying POST /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:14:35.480Z] INFO: Received response from Calendar Service: 400
+[2025-06-04T12:14:35.481Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:14:35 +0000] "POST /calendar/api/events HTTP/1.1" 400 79 "-" "PostmanRuntime/7.44.0"
+[2025-06-04T12:15:00.198Z] INFO: Proxying POST /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:15:00.244Z] INFO: Received response from Calendar Service: 400
+[2025-06-04T12:15:00.244Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:15:00 +0000] "POST /calendar/api/events HTTP/1.1" 400 66 "-" "PostmanRuntime/7.44.0"
+[2025-06-04T12:15:13.152Z] INFO: Proxying POST /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:15:13.156Z] INFO: Received response from Calendar Service: 400
+[2025-06-04T12:15:13.157Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:15:13 +0000] "POST /calendar/api/events HTTP/1.1" 400 66 "-" "PostmanRuntime/7.44.0"
+[2025-06-04T12:15:26.814Z] INFO: Proxying POST /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:15:26.822Z] INFO: Received response from Calendar Service: 400
+[2025-06-04T12:15:26.824Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:15:26 +0000] "POST /calendar/api/events HTTP/1.1" 400 66 "-" "PostmanRuntime/7.44.0"
+[2025-06-04T12:22:58.239Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:22:58.277Z] INFO: Received response from Calendar Service: 200
+[2025-06-04T12:22:58.278Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:22:58 +0000] "GET /calendar/api/events HTTP/1.1" 200 57 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:22:58.284Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:22:58.291Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T12:22:58.291Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:22:58 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:23:18.574Z] INFO: Proxying POST /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:23:18.658Z] INFO: Received response from Calendar Service: 201
+[2025-06-04T12:23:18.660Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:23:18 +0000] "POST /calendar/api/events HTTP/1.1" 201 397 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:23:18.684Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:23:18.693Z] INFO: Received response from Calendar Service: 200
+[2025-06-04T12:23:18.694Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:23:18 +0000] "GET /calendar/api/events HTTP/1.1" 200 407 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:24:57.500Z] INFO: API Gateway running on port 3000
+[2025-06-04T12:25:25.091Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-04T12:25:25.133Z] INFO: Received response from Auth Service: 401
+[2025-06-04T12:25:25.134Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:25:25 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:25:29.570Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-04T12:25:29.576Z] INFO: Received response from Auth Service: 401
+[2025-06-04T12:25:29.577Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:25:29 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:25:44.192Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-04T12:25:44.343Z] INFO: Received response from Auth Service: 200
+[2025-06-04T12:25:44.344Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:25:44 +0000] "POST /auth/login HTTP/1.1" 200 788 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:25:45.236Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:25:45.334Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T12:25:45.335Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:25:45 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:25:45.339Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:25:45.349Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T12:25:45.350Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:25:45 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:25:56.619Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:25:56.639Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T12:25:56.639Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:25:56 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:25:56.644Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:25:56.649Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T12:25:56.650Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:25:56 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:30:35.293Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:30:35.316Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T12:30:35.317Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:30:35 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:30:35.322Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T12:30:35.328Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T12:30:35.329Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:30:35 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:30:56.998Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-04T12:30:57.079Z] INFO: Received response from Auth Service: 200
+[2025-06-04T12:30:57.080Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:30:57 +0000] "POST /auth/login HTTP/1.1" 200 788 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T12:33:46.837Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-04T12:33:46.918Z] INFO: Received response from Auth Service: 200
+[2025-06-04T12:33:46.919Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:12:33:46 +0000] "POST /auth/login HTTP/1.1" 200 788 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T13:38:33.318Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-04T13:38:33.490Z] INFO: Received response from Auth Service: 401
+[2025-06-04T13:38:33.491Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:13:38:33 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T13:38:37.872Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-04T13:38:37.884Z] INFO: Received response from Auth Service: 401
+[2025-06-04T13:38:37.885Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:13:38:37 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T13:38:42.543Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-04T13:38:42.550Z] INFO: Received response from Auth Service: 401
+[2025-06-04T13:38:42.551Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:13:38:42 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T13:38:52.760Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-04T13:38:52.775Z] INFO: Received response from Auth Service: 401
+[2025-06-04T13:38:52.776Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:13:38:52 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T13:38:57.380Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-04T13:38:57.487Z] INFO: Received response from Auth Service: 200
+[2025-06-04T13:38:57.487Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:13:38:57 +0000] "POST /auth/login HTTP/1.1" 200 788 "-" "PostmanRuntime/7.44.0"
+[2025-06-04T13:39:06.250Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-04T13:39:06.334Z] INFO: Received response from Auth Service: 200
+[2025-06-04T13:39:06.336Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:13:39:06 +0000] "POST /auth/login HTTP/1.1" 200 788 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T13:40:57.326Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T13:40:57.530Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T13:40:57.531Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:13:40:57 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T13:40:57.536Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T13:40:57.542Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T13:40:57.543Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:13:40:57 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T13:47:39.664Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T13:47:39.714Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T13:47:39.717Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:13:47:39 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T13:47:39.722Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T13:47:39.729Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T13:47:39.729Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:13:47:39 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T13:47:40.501Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T13:47:40.509Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T13:47:40.509Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:13:47:40 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T13:47:40.519Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T13:47:40.530Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T13:47:40.531Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:13:47:40 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T13:47:41.599Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T13:47:41.607Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T13:47:41.607Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:13:47:41 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T13:47:41.613Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T13:47:41.624Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T13:47:41.624Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:13:47:41 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T15:07:15.026Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T15:07:15.172Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T15:07:15.173Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:15:07:15 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T15:07:15.177Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T15:07:15.190Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T15:07:15.190Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:15:07:15 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T15:10:06.006Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T15:10:06.039Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T15:10:06.040Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:15:10:06 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-04T15:10:06.044Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-04T15:10:06.051Z] INFO: Received response from Calendar Service: 304
+[2025-06-04T15:10:06.052Z] INFO: ::ffff:172.18.0.1 - - [04/Jun/2025:15:10:06 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T06:59:25.085Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-05T06:59:25.303Z] INFO: Received response from Calendar Service: 304
+[2025-06-05T06:59:25.305Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:06:59:25 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T06:59:25.309Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-05T06:59:25.317Z] INFO: Received response from Calendar Service: 304
+[2025-06-05T06:59:25.329Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:06:59:25 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T06:59:26.155Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-05T06:59:26.165Z] INFO: Received response from Calendar Service: 304
+[2025-06-05T06:59:26.167Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:06:59:26 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T06:59:26.174Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-05T06:59:26.181Z] INFO: Received response from Calendar Service: 304
+[2025-06-05T06:59:26.182Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:06:59:26 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T06:59:27.712Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-05T06:59:27.718Z] INFO: Received response from Calendar Service: 304
+[2025-06-05T06:59:27.719Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:06:59:27 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T06:59:27.725Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-05T06:59:27.733Z] INFO: Received response from Calendar Service: 304
+[2025-06-05T06:59:27.734Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:06:59:27 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T07:04:42.011Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-06-05T07:04:42.214Z] INFO: Received response from Auth Service: 400
+[2025-06-05T07:04:42.216Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:04:42 +0000] "POST /auth/register HTTP/1.1" 400 82 "-" "PostmanRuntime/7.44.0"
+[2025-06-05T07:04:49.295Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-06-05T07:04:49.486Z] INFO: Received response from Auth Service: 201
+[2025-06-05T07:04:49.488Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:04:49 +0000] "POST /auth/register HTTP/1.1" 201 777 "-" "PostmanRuntime/7.44.0"
+[2025-06-05T07:05:02.897Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-05T07:05:02.926Z] INFO: Received response from Auth Service: 401
+[2025-06-05T07:05:02.927Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:05:02 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T07:05:08.410Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-05T07:05:08.487Z] INFO: Received response from Auth Service: 200
+[2025-06-05T07:05:08.488Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:05:08 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T07:05:32.686Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-06-05T07:05:32.692Z] INFO: Received response from Auth Service: 400
+[2025-06-05T07:05:32.693Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:05:32 +0000] "POST /auth/register HTTP/1.1" 400 94 "-" "PostmanRuntime/7.44.0"
+[2025-06-05T07:06:41.121Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-06-05T07:06:41.127Z] INFO: Received response from Auth Service: 400
+[2025-06-05T07:06:41.128Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:06:41 +0000] "POST /auth/register HTTP/1.1" 400 136 "-" "PostmanRuntime/7.44.0"
+[2025-06-05T07:07:56.525Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-05T07:07:56.543Z] INFO: Received response from Auth Service: 401
+[2025-06-05T07:07:56.544Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:07:56 +0000] "POST /auth/login HTTP/1.1" 401 31 "-" "PostmanRuntime/7.44.0"
+[2025-06-05T07:08:22.720Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-06-05T07:08:22.728Z] INFO: Received response from Auth Service: 400
+[2025-06-05T07:08:22.728Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:08:22 +0000] "POST /auth/register HTTP/1.1" 400 94 "-" "PostmanRuntime/7.44.0"
+[2025-06-05T07:08:42.761Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-06-05T07:08:42.853Z] INFO: Received response from Auth Service: 201
+[2025-06-05T07:08:42.853Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:08:42 +0000] "POST /auth/register HTTP/1.1" 201 795 "-" "PostmanRuntime/7.44.0"
+[2025-06-05T07:08:54.051Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-05T07:08:54.139Z] INFO: Received response from Auth Service: 200
+[2025-06-05T07:08:54.139Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:08:54 +0000] "POST /auth/login HTTP/1.1" 200 783 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T07:09:11.179Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-06-05T07:09:11.258Z] INFO: Received response from Auth Service: 201
+[2025-06-05T07:09:11.259Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:09:11 +0000] "POST /auth/register HTTP/1.1" 201 788 "-" "PostmanRuntime/7.44.0"
+[2025-06-05T07:09:17.128Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-05T07:09:17.196Z] INFO: Received response from Auth Service: 200
+[2025-06-05T07:09:17.197Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:09:17 +0000] "POST /auth/login HTTP/1.1" 200 776 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T07:13:41.555Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-05T07:13:41.645Z] INFO: Received response from Auth Service: 200
+[2025-06-05T07:13:41.646Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:13:41 +0000] "POST /auth/login HTTP/1.1" 200 788 "-" "PostmanRuntime/7.44.0"
+[2025-06-05T07:16:13.026Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-05T07:16:13.163Z] INFO: Received response from Auth Service: 200
+[2025-06-05T07:16:13.164Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:16:13 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T07:34:17.144Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-05T07:34:17.245Z] INFO: Received response from Calendar Service: 304
+[2025-06-05T07:34:17.247Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:34:17 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T07:34:17.251Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-05T07:34:17.256Z] INFO: Received response from Calendar Service: 304
+[2025-06-05T07:34:17.257Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:34:17 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T07:56:46.377Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-05T07:56:46.548Z] INFO: Received response from Calendar Service: 304
+[2025-06-05T07:56:46.550Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:56:46 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-05T07:56:46.554Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-05T07:56:46.561Z] INFO: Received response from Calendar Service: 304
+[2025-06-05T07:56:46.562Z] INFO: ::ffff:172.18.0.1 - - [05/Jun/2025:07:56:46 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-06T07:51:06.032Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-06T07:51:06.507Z] INFO: Received response from Auth Service: 200
+[2025-06-06T07:51:06.512Z] INFO: ::ffff:172.18.0.1 - - [06/Jun/2025:07:51:06 +0000] "POST /auth/login HTTP/1.1" 200 788 "-" "PostmanRuntime/7.44.0"
+[2025-06-06T08:31:00.637Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-06T08:31:00.726Z] INFO: Received response from Auth Service: 401
+[2025-06-06T08:31:00.727Z] INFO: ::ffff:172.18.0.1 - - [06/Jun/2025:08:31:00 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-06T08:31:11.207Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-06T08:31:11.268Z] INFO: Received response from Auth Service: 401
+[2025-06-06T08:31:11.276Z] INFO: ::ffff:172.18.0.1 - - [06/Jun/2025:08:31:11 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-06T08:31:17.874Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-06T08:31:17.909Z] INFO: Received response from Auth Service: 401
+[2025-06-06T08:31:17.910Z] INFO: ::ffff:172.18.0.1 - - [06/Jun/2025:08:31:17 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-06T08:31:30.526Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-06T08:31:30.568Z] INFO: Received response from Auth Service: 401
+[2025-06-06T08:31:30.568Z] INFO: ::ffff:172.18.0.1 - - [06/Jun/2025:08:31:30 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-06T08:31:46.559Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-06T08:31:46.592Z] INFO: Received response from Auth Service: 401
+[2025-06-06T08:31:46.593Z] INFO: ::ffff:172.18.0.1 - - [06/Jun/2025:08:31:46 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-06T08:31:47.181Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-06T08:31:47.246Z] INFO: Received response from Auth Service: 401
+[2025-06-06T08:31:47.247Z] INFO: ::ffff:172.18.0.1 - - [06/Jun/2025:08:31:47 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-06T08:31:59.796Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-06T08:31:59.826Z] INFO: Received response from Auth Service: 401
+[2025-06-06T08:31:59.827Z] INFO: ::ffff:172.18.0.1 - - [06/Jun/2025:08:31:59 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-06T08:32:05.416Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-06T08:32:05.525Z] INFO: Received response from Auth Service: 200
+[2025-06-06T08:32:05.526Z] INFO: ::ffff:172.18.0.1 - - [06/Jun/2025:08:32:05 +0000] "POST /auth/login HTTP/1.1" 200 788 "-" "PostmanRuntime/7.44.0"
+[2025-06-06T08:32:15.857Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-06T08:32:15.966Z] INFO: Received response from Auth Service: 200
+[2025-06-06T08:32:15.968Z] INFO: ::ffff:172.18.0.1 - - [06/Jun/2025:08:32:15 +0000] "POST /auth/login HTTP/1.1" 200 788 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-06T10:22:44.360Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-06T10:22:44.545Z] INFO: Received response from Auth Service: 200
+[2025-06-06T10:22:44.547Z] INFO: ::ffff:172.18.0.1 - - [06/Jun/2025:10:22:44 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-06T10:38:04.048Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-06T10:38:04.148Z] INFO: Received response from Auth Service: 200
+[2025-06-06T10:38:04.150Z] INFO: ::ffff:172.18.0.1 - - [06/Jun/2025:10:38:04 +0000] "POST /auth/login HTTP/1.1" 200 788 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-06T10:38:18.538Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-06T10:38:18.723Z] INFO: Received response from Calendar Service: 304
+[2025-06-06T10:38:18.724Z] INFO: ::ffff:172.18.0.1 - - [06/Jun/2025:10:38:18 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-06T10:38:18.736Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-06T10:38:18.741Z] INFO: Received response from Calendar Service: 304
+[2025-06-06T10:38:18.742Z] INFO: ::ffff:172.18.0.1 - - [06/Jun/2025:10:38:18 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T06:16:15.607Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-10T06:16:16.182Z] INFO: Received response from Auth Service: 200
+[2025-06-10T06:16:16.187Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:06:16:16 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T06:55:54.219Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-10T06:55:54.476Z] INFO: Received response from Auth Service: 200
+[2025-06-10T06:55:54.480Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:06:55:54 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T07:02:15.653Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-10T07:02:15.859Z] INFO: Received response from Auth Service: 200
+[2025-06-10T07:02:15.861Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:07:02:15 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T09:18:46.999Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-10T09:18:47.041Z] INFO: Received response from Auth Service: 400
+[2025-06-10T09:18:47.044Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:09:18:47 +0000] "POST /auth/login HTTP/1.1" 400 112 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T09:19:30.893Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-10T09:19:31.126Z] INFO: Received response from Auth Service: 200
+[2025-06-10T09:19:31.126Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:09:19:31 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T09:37:00.617Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:09:37:00 +0000] "GET /api/tickets HTTP/1.1" 404 27 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T09:37:04.220Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:09:37:04 +0000] "GET /api/tickets HTTP/1.1" 404 27 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T09:37:04.226Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:09:37:04 +0000] "GET /api/tickets HTTP/1.1" 404 27 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T09:38:35.810Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:09:38:35 +0000] "GET /api/tickets HTTP/1.1" 404 27 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T09:38:35.823Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:09:38:35 +0000] "GET /api/tickets HTTP/1.1" 404 27 "http://localhost:5174/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T09:39:51.034Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:09:39:51 +0000] "GET /api/tickets HTTP/1.1" 404 27 "-" "PostmanRuntime/7.44.0"
+[2025-06-10T10:04:45.621Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-10T10:04:45.913Z] INFO: Received response from Auth Service: 200
+[2025-06-10T10:04:45.914Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:04:45 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:08:54.040Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-10T10:08:54.182Z] INFO: Received response from Auth Service: 200
+[2025-06-10T10:08:54.184Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:08:54 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:18:55.943Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-10T10:18:56.125Z] INFO: Received response from Auth Service: 200
+[2025-06-10T10:18:56.126Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:18:56 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:22:33.386Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:22:33 +0000] "GET /tickets/users HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:22:33.390Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:22:33 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:22:33.393Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:22:33 +0000] "GET /tickets/stats/summary HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:22:33.398Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:22:33 +0000] "GET /tickets/users HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:22:33.402Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:22:33 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:22:33.414Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:22:33 +0000] "GET /tickets/stats/summary HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:23:05.178Z] INFO: API Gateway running on port 3000
+[2025-06-10T10:23:09.111Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-10T10:23:09.243Z] INFO: Received response from Auth Service: 200
+[2025-06-10T10:23:09.247Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:23:09 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:23:15.685Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:23:15.688Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:23:15 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:23:15.690Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:23:15.691Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:23:15 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:23:15.693Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:23:15.694Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:23:15 +0000] "GET /tickets/users HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:23:15.697Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:23:15.699Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:23:15 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:23:15.702Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:23:15.704Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:23:15 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:23:15.706Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:23:15.707Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:23:15 +0000] "GET /tickets/users HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:23:21.926Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:23:21.927Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:23:21 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:23:21.931Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:23:21.932Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:23:21 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:23:21.935Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:23:21.937Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:23:21 +0000] "GET /tickets/users HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:23:21.953Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:23:21.954Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:23:21 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:23:21.964Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:23:21.966Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:23:21 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:23:21.977Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:23:21.978Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:23:21 +0000] "GET /tickets/users HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:47:27.499Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-10T10:47:28.180Z] INFO: Received response from Auth Service: 200
+[2025-06-10T10:47:28.184Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:47:28 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:47:32.177Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:47:32.184Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:47:32 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:47:32.186Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:47:32.187Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:47:32 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:47:32.191Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:47:32.192Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:47:32 +0000] "GET /tickets/users HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:47:32.208Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:47:32.211Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:47:32 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:47:32.216Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:47:32.217Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:47:32 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:47:32.220Z] ERROR: Auth middleware error: jwt expired
+[2025-06-10T10:47:32.223Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:47:32 +0000] "GET /tickets/users HTTP/1.1" 401 40 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:47:32.230Z] INFO: Proxying POST /auth/refresh-token to Auth Service at http://auth-service:4001/api/auth/api/auth/refresh-token
+[2025-06-10T10:47:32.233Z] INFO: Proxying POST /auth/refresh-token to Auth Service at http://auth-service:4001/api/auth/api/auth/refresh-token
+[2025-06-10T10:47:32.238Z] INFO: Proxying POST /auth/refresh-token to Auth Service at http://auth-service:4001/api/auth/api/auth/refresh-token
+[2025-06-10T10:47:32.240Z] INFO: Proxying POST /auth/refresh-token to Auth Service at http://auth-service:4001/api/auth/api/auth/refresh-token
+[2025-06-10T10:47:32.248Z] INFO: Proxying POST /auth/refresh-token to Auth Service at http://auth-service:4001/api/auth/api/auth/refresh-token
+[2025-06-10T10:47:32.250Z] INFO: Proxying POST /auth/refresh-token to Auth Service at http://auth-service:4001/api/auth/api/auth/refresh-token
+[2025-06-10T10:47:32.437Z] INFO: Received response from Auth Service: 200
+[2025-06-10T10:47:32.438Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:47:32 +0000] "POST /auth/refresh-token HTTP/1.1" 200 604 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:47:32.442Z] INFO: Received response from Auth Service: 200
+[2025-06-10T10:47:32.444Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:47:32 +0000] "POST /auth/refresh-token HTTP/1.1" 200 604 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:47:32.445Z] INFO: Received response from Auth Service: 200
+[2025-06-10T10:47:32.446Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:47:32 +0000] "POST /auth/refresh-token HTTP/1.1" 200 604 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:47:32.447Z] INFO: Received response from Auth Service: 200
+[2025-06-10T10:47:32.449Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:47:32 +0000] "POST /auth/refresh-token HTTP/1.1" 200 604 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:47:32.450Z] INFO: Received response from Auth Service: 200
+[2025-06-10T10:47:32.452Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:47:32 +0000] "POST /auth/refresh-token HTTP/1.1" 200 604 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:47:32.455Z] INFO: Received response from Auth Service: 200
+[2025-06-10T10:47:32.456Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:47:32 +0000] "POST /auth/refresh-token HTTP/1.1" 200 604 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:52:45.577Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:52:45 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:52:45.580Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:52:45 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:52:45.585Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:52:45 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:52:46.563Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:52:46 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:52:46.564Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:52:46 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:52:46.565Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:52:46 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:54:52.035Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:54:52 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:54:52.036Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:54:52 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:54:52.039Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:54:52 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:54:52.044Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:54:52 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:54:52.048Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:54:52 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:54:52.053Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:54:52 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:57:40.104Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-10T10:57:40.253Z] INFO: Received response from Auth Service: 200
+[2025-06-10T10:57:40.254Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:57:40 +0000] "POST /auth/login HTTP/1.1" 200 788 "-" "PostmanRuntime/7.44.0"
+[2025-06-10T10:58:39.919Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:58:39 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:58:39.936Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:58:39 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:58:39.937Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:58:39 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:58:40.788Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:58:40 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:58:40.794Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:58:40 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T10:58:40.796Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:10:58:40 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:00:01.042Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:00:01 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:00:01.043Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:00:01 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:00:01.048Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:00:01 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:00:01.050Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:00:01 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:00:01.061Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:00:01 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:00:01.061Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:00:01 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:02:27.193Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:02:27 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:02:27.195Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:02:27 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:02:27.198Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:02:27 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:02:28.066Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:02:28 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:02:28.069Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:02:28 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:02:28.071Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:02:28 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:06:37.641Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-10T11:06:37.758Z] INFO: Received response from Auth Service: 200
+[2025-06-10T11:06:37.759Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:06:37 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:06:44.903Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:06:44 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:06:44.905Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:06:44 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:06:44.909Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:06:44 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:06:44.910Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:06:44 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:06:44.912Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:06:44 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:06:44.922Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:06:44 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:06:44.935Z] INFO: Proxying POST /auth/refresh-token to Auth Service at http://auth-service:4001/api/auth/api/auth/refresh-token
+[2025-06-10T11:06:44.939Z] INFO: Proxying POST /auth/refresh-token to Auth Service at http://auth-service:4001/api/auth/api/auth/refresh-token
+[2025-06-10T11:06:44.941Z] INFO: Proxying POST /auth/refresh-token to Auth Service at http://auth-service:4001/api/auth/api/auth/refresh-token
+[2025-06-10T11:06:44.947Z] INFO: Proxying POST /auth/refresh-token to Auth Service at http://auth-service:4001/api/auth/api/auth/refresh-token
+[2025-06-10T11:06:44.953Z] INFO: Proxying POST /auth/refresh-token to Auth Service at http://auth-service:4001/api/auth/api/auth/refresh-token
+[2025-06-10T11:06:44.958Z] INFO: Proxying POST /auth/refresh-token to Auth Service at http://auth-service:4001/api/auth/api/auth/refresh-token
+[2025-06-10T11:06:45.078Z] INFO: Received response from Auth Service: 200
+[2025-06-10T11:06:45.079Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:06:45 +0000] "POST /auth/refresh-token HTTP/1.1" 200 604 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:06:45.080Z] INFO: Received response from Auth Service: 200
+[2025-06-10T11:06:45.080Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:06:45 +0000] "POST /auth/refresh-token HTTP/1.1" 200 604 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:06:45.081Z] INFO: Received response from Auth Service: 200
+[2025-06-10T11:06:45.082Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:06:45 +0000] "POST /auth/refresh-token HTTP/1.1" 200 604 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:06:45.087Z] INFO: Received response from Auth Service: 200
+[2025-06-10T11:06:45.088Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:06:45 +0000] "POST /auth/refresh-token HTTP/1.1" 200 604 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:06:45.090Z] INFO: Received response from Auth Service: 200
+[2025-06-10T11:06:45.091Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:06:45 +0000] "POST /auth/refresh-token HTTP/1.1" 200 604 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:06:45.104Z] INFO: Received response from Auth Service: 200
+[2025-06-10T11:06:45.105Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:06:45 +0000] "POST /auth/refresh-token HTTP/1.1" 200 604 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:07:26.306Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:07:26 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:07:26.308Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:07:26 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:07:26.311Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:07:26 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:07:26.315Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:07:26 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:07:26.320Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:07:26 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:07:26.322Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:07:26 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:07:26.996Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:07:26 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:07:26.998Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:07:26 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:07:26.998Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:07:26 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:07:27.005Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:07:27 +0000] "GET /tickets?page=1&limit=10&status=&priority=&category=&department=&search= HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:07:27.006Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:07:27 +0000] "GET /tickets/stats/summary HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:07:27.007Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:07:27 +0000] "GET /tickets/users HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:29:46.906Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-10T11:29:47.292Z] INFO: Received response from Calendar Service: 304
+[2025-06-10T11:29:47.297Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:29:47 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:29:47.302Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-10T11:29:47.307Z] INFO: Received response from Calendar Service: 304
+[2025-06-10T11:29:47.307Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:29:47 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:44:47.034Z] INFO: API Gateway running on port 3000
+[2025-06-10T11:52:02.593Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:52:02 +0000] "GET /tickets HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:52:02.603Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:52:02 +0000] "GET /tickets HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:56:05.191Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:56:05 +0000] "GET /tickets HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:56:05.639Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:56:05 +0000] "GET /tickets HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:56:05.975Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:56:05 +0000] "GET /tickets HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T11:56:10.379Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:11:56:10 +0000] "GET /tickets HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:00:37.657Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:00:37 +0000] "GET /tickets HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:06:09.133Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:06:09 +0000] "GET /tickets HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:06:09.139Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:06:09 +0000] "GET /tickets HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:13:11.404Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:13:11 +0000] "GET /tickets HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:13:11.917Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:13:11 +0000] "GET /tickets HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:13:43.707Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-10T12:13:44.328Z] INFO: Received response from Auth Service: 200
+[2025-06-10T12:13:44.333Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:13:44 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:13:51.656Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:13:51 +0000] "GET /tickets HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:13:51.663Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:13:51 +0000] "GET /tickets HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:16:13.520Z] INFO: Proxying GET /tickets to Tickets Service at http://tickets-service:4003/api/tickets/api/tickets
+[2025-06-10T12:16:18.528Z] ERROR: Proxy error to Tickets Service: Error: getaddrinfo EAI_AGAIN tickets-service
+[2025-06-10T12:16:18.530Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:16:18 +0000] "GET /tickets HTTP/1.1" 502 128 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:16:18.539Z] INFO: Proxying GET /tickets to Tickets Service at http://tickets-service:4003/api/tickets/api/tickets
+[2025-06-10T12:16:22.186Z] ERROR: Proxy error to Tickets Service: Error: getaddrinfo ENOTFOUND tickets-service
+[2025-06-10T12:16:22.187Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:16:22 +0000] "GET /tickets HTTP/1.1" 502 128 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:16:56.642Z] INFO: Proxying GET /tickets to Tickets Service at http://tickets-service:4003/api/tickets/api/tickets
+[2025-06-10T12:17:01.643Z] ERROR: Proxy error to Tickets Service: Error: getaddrinfo EAI_AGAIN tickets-service
+[2025-06-10T12:17:01.644Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:17:01 +0000] "GET /tickets HTTP/1.1" 502 128 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:19:35.401Z] INFO: API Gateway running on port 3000
+[2025-06-10T12:19:39.512Z] INFO: Proxying GET /tickets to Tickets Service at http://tickets-service:4003/api/tickets/api/tickets
+[2025-06-10T12:19:44.516Z] ERROR: Proxy error to Tickets Service: Error: getaddrinfo EAI_AGAIN tickets-service
+[2025-06-10T12:19:44.520Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:19:44 +0000] "GET /tickets HTTP/1.1" 502 128 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:20:47.871Z] INFO: API Gateway running on port 3000
+[2025-06-10T12:21:08.540Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-10T12:21:08.676Z] INFO: Received response from Auth Service: 200
+[2025-06-10T12:21:08.678Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:21:08 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:21:14.967Z] INFO: Proxying GET /tickets to Tickets Service at http://tickets-service:4003/api/tickets/api/tickets
+[2025-06-10T12:21:19.970Z] ERROR: Proxy error to Tickets Service: Error: getaddrinfo EAI_AGAIN tickets-service
+[2025-06-10T12:21:19.973Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:21:19 +0000] "GET /tickets HTTP/1.1" 502 128 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:21:19.986Z] INFO: Proxying GET /tickets to Tickets Service at http://tickets-service:4003/api/tickets/api/tickets
+[2025-06-10T12:21:23.651Z] ERROR: Proxy error to Tickets Service: Error: getaddrinfo ENOTFOUND tickets-service
+[2025-06-10T12:21:23.653Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:21:23 +0000] "GET /tickets HTTP/1.1" 502 128 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:26:57.585Z] INFO: Proxying GET /tickets to Tickets Service at http://tickets-service:4003/api/tickets/api/tickets
+[2025-06-10T12:27:02.590Z] ERROR: Proxy error to Tickets Service: Error: getaddrinfo EAI_AGAIN tickets-service
+[2025-06-10T12:27:02.592Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:27:02 +0000] "GET /tickets HTTP/1.1" 502 128 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:27:02.600Z] INFO: Proxying GET /tickets to Tickets Service at http://tickets-service:4003/api/tickets/api/tickets
+[2025-06-10T12:27:06.235Z] ERROR: Proxy error to Tickets Service: Error: getaddrinfo ENOTFOUND tickets-service
+[2025-06-10T12:27:06.236Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:27:06 +0000] "GET /tickets HTTP/1.1" 502 128 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T12:29:02.396Z] INFO: API Gateway running on port 3000
+[2025-06-10T12:30:25.525Z] INFO: Proxying GET /tickets to Tickets Service. Target: http://tickets-service:4003, Rewritten Path: /
+[2025-06-10T12:30:30.529Z] ERROR: Proxy error to Tickets Service: Error: getaddrinfo EAI_AGAIN tickets-service
+[2025-06-10T12:30:30.533Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:30:30 +0000] "GET /tickets HTTP/1.1" 502 128 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"

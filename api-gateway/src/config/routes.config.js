@@ -21,14 +21,24 @@ const configureRoutes = (app) => {
     })
   );
 
-  // Protected routes - Add other services here
-  app.use('/api',
+  // Protected routes
+  app.use('/api/tickets',
     authMiddleware,
     rateLimiterMiddleware,
-    (req, res) => {
-      // This is a placeholder - Add other services routing here
-      res.status(200).json({ message: 'API Gateway working' });
-    }
+    createProxyMiddleware({
+      target: config.ticketsServiceUrl,
+      changeOrigin: true,
+      pathRewrite: {
+        '^/api/tickets': '/api/tickets'
+      },
+      onError: (err, req, res) => {
+        logger.error(`Proxy error: ${err.message}`);
+        res.status(500).json({
+          error: 'Service unavailable',
+          message: 'Ticket service is currently unavailable'
+        });
+      }
+    })
   );
 
   // Catch-all route
