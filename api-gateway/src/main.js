@@ -150,6 +150,36 @@ app.use('/calendar', createProxyMiddleware({
   }
 }));
 
+// Proxy setup for solicitudes service
+app.use('/solicitudes', authMiddleware, createProxyMiddleware({
+  target: config.solicitudesServiceUrl,
+  changeOrigin: true,
+  pathRewrite: {
+    '^/solicitudes': '' // Remove /solicitudes prefix
+  },
+  logLevel: 'debug',
+  onProxyReq: (proxyReq, req, res) => {
+    if (req.body) {
+      const bodyData = JSON.stringify(req.body);
+      proxyReq.setHeader('Content-Type', 'application/json');
+      proxyReq.setHeader('Content-Length', Buffer.byteLength(bodyData));
+      proxyReq.write(bodyData);
+    }
+    logger.info(`Proxying ${req.method} ${req.originalUrl} to Solicitudes Service. Target: ${config.solicitudesServiceUrl}, Rewritten Path: ${proxyReq.path}`);
+  },
+  onProxyRes: (proxyRes, req, res) => {
+    logger.info(`Received response from Solicitudes Service: ${proxyRes.statusCode}`);
+  },
+  onError: (err, req, res) => {
+    logger.error(`Proxy error to Solicitudes Service: ${err.toString()}`);
+    res.status(502).json({
+      error: 'Bad Gateway',
+      message: 'Error connecting to solicitudes service',
+      details: err.toString()
+    });
+  }
+}));
+
 // Catch-all route
 app.use('*', (req, res) => {
   res.status(404).json({ error: 'Route not found' });

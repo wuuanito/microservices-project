@@ -6,6 +6,7 @@ module.exports = {
   authServiceUrl: process.env.AUTH_SERVICE_URL || 'http://auth-service:4001',
   ticketsServiceUrl: process.env.TICKETS_SERVICE_URL || 'http://tickets-service:4003',
   calendarServiceUrl: process.env.CALENDAR_SERVICE_URL || 'http://calendar-service:3003',
+  solicitudesServiceUrl: process.env.SOLICITUDES_SERVICE_URL || 'http://solicitudes-service:4000',
   jwtSecret: process.env.JWT_SECRET || 'your_jwt_secret',
   rateLimitWindow: parseInt(process.env.RATE_LIMIT_WINDOW) || 15 * 60 * 1000, // 15 minutes
   rateLimitMax: parseInt(process.env.RATE_LIMIT_MAX) || 100 // 100 requests per window

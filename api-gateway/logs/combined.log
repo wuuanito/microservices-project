@@ -4698,3 +4698,12 @@
 [2025-06-16T07:11:01.439Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
 [2025-06-16T07:11:01.456Z] INFO: Received response from Calendar Service: 304
 [2025-06-16T07:11:01.462Z] INFO: ::ffff:172.18.0.1 - - [16/Jun/2025:07:11:01 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-17T07:48:37.829Z] INFO: API Gateway running on port 3000
+[2025-06-17T08:09:12.610Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-17T08:09:12.881Z] INFO: Received response from Calendar Service: 304
+[2025-06-17T08:09:12.886Z] INFO: ::ffff:172.18.0.1 - - [17/Jun/2025:08:09:12 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-17T08:09:12.922Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-17T08:09:12.956Z] INFO: Received response from Calendar Service: 304
+[2025-06-17T08:09:12.958Z] INFO: ::ffff:172.18.0.1 - - [17/Jun/2025:08:09:12 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-17T08:28:27.289Z] INFO: API Gateway running on port 3000
+[2025-06-17T08:33:14.887Z] INFO: API Gateway running on port 3000

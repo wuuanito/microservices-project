@@ -94,6 +94,31 @@ services:
       - /app/node_modules
     restart: unless-stopped
 
+  # Solicitudes Service
+  solicitudes-service:
+    build: ./solicitudes-service
+    container_name: solicitudes-service
+    ports:
+      - "${SOLICITUDES_SERVICE_PORT:-4000}:4000"
+    environment:
+      - NODE_ENV=development
+      - PORT=4000
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${SOLICITUDES_DB_NAME:-solicitudes_service_db}
+      - CORS_ORIGIN=*
+    depends_on:
+      - auth-service
+    networks:
+      - microservices-network
+    volumes:
+      - ./solicitudes-service:/app
+      - /app/node_modules
+      - ./solicitudes-service/uploads:/app/uploads
+    restart: unless-stopped
+
 networks:
   microservices-network:
     driver: bridge

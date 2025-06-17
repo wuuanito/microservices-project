@@ -901,3 +901,12 @@
 [2025-06-16T10:41:01.251Z] INFO: ::ffff:172.18.0.3 - - [16/Jun/2025:10:41:01 +0000] "GET /auth/verify HTTP/1.1" 404 27 "-" "axios/1.9.0"
 [2025-06-16T13:32:33.929Z] INFO: ::ffff:172.18.0.3 - - [16/Jun/2025:13:32:33 +0000] "GET /auth/verify HTTP/1.1" 404 27 "-" "axios/1.9.0"
 [2025-06-16T13:32:34.068Z] INFO: ::ffff:172.18.0.3 - - [16/Jun/2025:13:32:34 +0000] "GET /auth/verify HTTP/1.1" 404 27 "-" "axios/1.9.0"
+[2025-06-17T07:48:38.401Z] INFO: Database connection established successfully
+[2025-06-17T07:48:39.723Z] INFO: Database synchronized successfully
+[2025-06-17T07:48:39.725Z] INFO: Auth service running on port 4001
+[2025-06-17T08:28:27.775Z] INFO: Database connection established successfully
+[2025-06-17T08:28:29.025Z] INFO: Database synchronized successfully
+[2025-06-17T08:28:29.028Z] INFO: Auth service running on port 4001
+[2025-06-17T08:33:15.345Z] INFO: Database connection established successfully
+[2025-06-17T08:33:16.910Z] INFO: Database synchronized successfully
+[2025-06-17T08:33:16.912Z] INFO: Auth service running on port 4001
