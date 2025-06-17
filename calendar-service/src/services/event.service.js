@@ -116,10 +116,163 @@ const deleteEvent = async (id) => {
   }
 };
 
+// Crear evento rutinario con instancias futuras
+const createRecurringEvent = async (eventData) => {
+  try {
+    // Crear el evento padre
+    const parentEvent = await Event.create({
+      ...eventData,
+      isRecurring: true
+    });
+
+    // Generar instancias futuras del evento
+    const instances = generateRecurringInstances(parentEvent);
+    
+    // Crear todas las instancias
+    const createdInstances = await Event.bulkCreate(instances);
+    
+    return {
+      parentEvent,
+      instances: createdInstances
+    };
+  } catch (error) {
+    console.error('Error in createRecurringEvent service:', error);
+    throw error;
+  }
+};
+
+// Generar instancias de eventos rutinarios
+const generateRecurringInstances = (parentEvent) => {
+  const instances = [];
+  const startDate = new Date(parentEvent.startTime);
+  const endDate = new Date(parentEvent.endTime);
+  const duration = endDate.getTime() - startDate.getTime();
+  
+  // Determinar fecha límite (6 meses por defecto si no se especifica)
+  const limitDate = parentEvent.recurrenceEndDate 
+    ? new Date(parentEvent.recurrenceEndDate)
+    : new Date(startDate.getTime() + (6 * 30 * 24 * 60 * 60 * 1000)); // 6 meses
+  
+  let currentDate = new Date(startDate);
+  
+  // Generar instancias según el patrón
+  while (currentDate <= limitDate) {
+    // Calcular siguiente fecha según el patrón
+    switch (parentEvent.recurrencePattern) {
+      case 'daily':
+        currentDate.setDate(currentDate.getDate() + parentEvent.recurrenceInterval);
+        break;
+      case 'weekly':
+        currentDate.setDate(currentDate.getDate() + (7 * parentEvent.recurrenceInterval));
+        break;
+      case 'monthly':
+        currentDate.setMonth(currentDate.getMonth() + parentEvent.recurrenceInterval);
+        break;
+      case 'yearly':
+        currentDate.setFullYear(currentDate.getFullYear() + parentEvent.recurrenceInterval);
+        break;
+      default:
+        throw new Error('Patrón de recurrencia no válido');
+    }
+    
+    if (currentDate <= limitDate) {
+      const instanceEndTime = new Date(currentDate.getTime() + duration);
+      
+      instances.push({
+        title: parentEvent.title,
+        description: parentEvent.description,
+        responsible: parentEvent.responsible,
+        participants: parentEvent.participants,
+        roomReserved: parentEvent.roomReserved,
+        startTime: new Date(currentDate),
+        endTime: instanceEndTime,
+        eventType: parentEvent.eventType,
+        isRecurring: false, // Las instancias no son rutinarias
+        parentEventId: parentEvent.id
+      });
+    }
+  }
+  
+  return instances;
+};
+
+// Actualizar evento rutinario
+const updateRecurringEvent = async (id, eventData, updateType = 'single') => {
+  try {
+    const event = await Event.findByPk(id);
+    if (!event) {
+      return [0, []];
+    }
+
+    if (updateType === 'single') {
+      // Actualizar solo esta instancia
+      const [updatedCount, updatedEvents] = await Event.update(eventData, {
+        where: { id },
+        returning: true,
+      });
+      return [updatedCount, updatedEvents];
+    } else if (updateType === 'all') {
+      // Actualizar el evento padre y todas las instancias futuras
+      const parentId = event.parentEventId || id;
+      
+      // Actualizar evento padre
+      await Event.update(eventData, {
+        where: { id: parentId }
+      });
+      
+      // Actualizar todas las instancias futuras
+      const [updatedCount, updatedEvents] = await Event.update(eventData, {
+        where: {
+          parentEventId: parentId,
+          startTime: { [Op.gte]: new Date() }
+        },
+        returning: true,
+      });
+      
+      return [updatedCount, updatedEvents];
+    }
+  } catch (error) {
+    console.error(`Error in updateRecurringEvent service (id: ${id}):`, error);
+    throw error;
+  }
+};
+
+// Eliminar evento rutinario
+const deleteRecurringEvent = async (id, deleteType = 'single') => {
+  try {
+    const event = await Event.findByPk(id);
+    if (!event) {
+      return 0;
+    }
+
+    if (deleteType === 'single') {
+      // Eliminar solo esta instancia
+      return await Event.destroy({ where: { id } });
+    } else if (deleteType === 'all') {
+      // Eliminar el evento padre y todas las instancias
+      const parentId = event.parentEventId || id;
+      
+      // Eliminar todas las instancias
+      await Event.destroy({
+        where: { parentEventId: parentId }
+      });
+      
+      // Eliminar evento padre
+      return await Event.destroy({ where: { id: parentId } });
+    }
+  } catch (error) {
+    console.error(`Error in deleteRecurringEvent service (id: ${id}):`, error);
+    throw error;
+  }
+};
+
 module.exports = {
   createEvent,
   getAllEvents,
   getEventById,
   updateEvent,
   deleteEvent,
+  createRecurringEvent,
+  updateRecurringEvent,
+  deleteRecurringEvent,
 };

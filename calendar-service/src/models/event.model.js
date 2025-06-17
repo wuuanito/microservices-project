@@ -74,6 +74,56 @@ Event.init({
       // }
     }
   },
+  // Campos para eventos rutinarios
+  isRecurring: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false,
+    defaultValue: false,
+    field: 'is_recurring'
+  },
+  recurrencePattern: {
+    type: DataTypes.STRING,
+    allowNull: true,
+    field: 'recurrence_pattern',
+    validate: {
+      isValidPattern(value) {
+        if (this.isRecurring && !value) {
+          throw new Error('El patrón de recurrencia es obligatorio para eventos rutinarios.');
+        }
+        if (value && !['daily', 'weekly', 'monthly', 'yearly'].includes(value)) {
+          throw new Error('El patrón de recurrencia debe ser: daily, weekly, monthly o yearly.');
+        }
+      }
+    }
+  },
+  recurrenceInterval: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+    defaultValue: 1,
+    field: 'recurrence_interval',
+    validate: {
+      min: 1,
+      isValidInterval(value) {
+        if (this.isRecurring && (!value || value < 1)) {
+          throw new Error('El intervalo de recurrencia debe ser mayor a 0 para eventos rutinarios.');
+        }
+      }
+    }
+  },
+  recurrenceEndDate: {
+    type: DataTypes.DATE,
+    allowNull: true,
+    field: 'recurrence_end_date'
+  },
+  parentEventId: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+    field: 'parent_event_id',
+    references: {
+      model: 'events',
+      key: 'id'
+    }
+  }
   // Campos adicionales que podrían ser útiles:
   // createdBy: { type: DataTypes.INTEGER, field: 'created_by' }, // ID del usuario que creó el evento
   // updatedBy: { type: DataTypes.INTEGER, field: 'updated_by' }, // ID del usuario que actualizó el evento

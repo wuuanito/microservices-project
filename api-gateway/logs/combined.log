@@ -4286,3 +4286,415 @@
 [2025-06-10T12:30:25.525Z] INFO: Proxying GET /tickets to Tickets Service. Target: http://tickets-service:4003, Rewritten Path: /
 [2025-06-10T12:30:30.529Z] ERROR: Proxy error to Tickets Service: Error: getaddrinfo EAI_AGAIN tickets-service
 [2025-06-10T12:30:30.533Z] INFO: ::ffff:172.18.0.1 - - [10/Jun/2025:12:30:30 +0000] "GET /tickets HTTP/1.1" 502 128 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-10T15:21:32.418Z] INFO: API Gateway running on port 3000
+[2025-06-11T09:28:22.241Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-11T09:28:23.180Z] INFO: Received response from Auth Service: 200
+[2025-06-11T09:28:23.186Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:09:28:23 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T09:39:53.933Z] INFO: Proxying POST /auth/register to Auth Service at http://auth-service:4001/api/auth/api/auth/register
+[2025-06-11T09:39:54.072Z] INFO: Received response from Auth Service: 201
+[2025-06-11T09:39:54.074Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:09:39:54 +0000] "POST /auth/register HTTP/1.1" 201 793 "-" "PostmanRuntime/7.44.0"
+[2025-06-11T09:40:02.482Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-11T09:40:02.566Z] INFO: Received response from Auth Service: 200
+[2025-06-11T09:40:02.568Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:09:40:02 +0000] "POST /auth/login HTTP/1.1" 200 781 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T10:35:28.927Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T10:35:29.244Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T10:35:29.246Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:10:35:29 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T10:35:29.251Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T10:35:29.259Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T10:35:29.260Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:10:35:29 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T10:39:28.238Z] INFO: API Gateway running on port 3000
+[2025-06-11T10:44:48.520Z] INFO: API Gateway running on port 3000
+[2025-06-11T10:46:46.475Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-11T10:46:46.604Z] INFO: Received response from Auth Service: 200
+[2025-06-11T10:46:46.607Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:10:46:46 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T11:08:34.269Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-11T11:08:34.486Z] INFO: Received response from Auth Service: 200
+[2025-06-11T11:08:34.488Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:11:08:34 +0000] "POST /auth/login HTTP/1.1" 200 781 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T11:09:51.266Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-11T11:09:51.377Z] INFO: Received response from Auth Service: 200
+[2025-06-11T11:09:51.378Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:11:09:51 +0000] "POST /auth/login HTTP/1.1" 200 762 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T11:11:04.190Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-11T11:11:04.279Z] INFO: Received response from Auth Service: 200
+[2025-06-11T11:11:04.280Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:11:11:04 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T11:12:34.040Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-11T11:12:34.123Z] INFO: Received response from Auth Service: 200
+[2025-06-11T11:12:34.125Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:11:12:34 +0000] "POST /auth/login HTTP/1.1" 200 762 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T11:13:09.057Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-11T11:13:09.146Z] INFO: Received response from Auth Service: 200
+[2025-06-11T11:13:09.148Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:11:13:09 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T11:14:36.687Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T11:14:36.928Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T11:14:36.929Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:11:14:36 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T11:14:36.935Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T11:14:36.941Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T11:14:36.942Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:11:14:36 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T11:14:49.773Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T11:14:49.810Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T11:14:49.811Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:11:14:49 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T11:14:49.814Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T11:14:49.819Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T11:14:49.820Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:11:14:49 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T11:14:52.227Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T11:14:52.236Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T11:14:52.238Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:11:14:52 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T11:14:52.247Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T11:14:52.251Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T11:14:52.252Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:11:14:52 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T11:14:58.176Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T11:14:58.187Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T11:14:58.188Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:11:14:58 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T11:14:58.192Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T11:14:58.198Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T11:14:58.198Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:11:14:58 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:30:50.865Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:30:51.152Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T13:30:51.153Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:30:51 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:30:51.158Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:30:51.165Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T13:30:51.165Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:30:51 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:38:00.496Z] INFO: API Gateway running on port 3000
+[2025-06-11T13:38:32.365Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:32 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zq1sqbta HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:38:32.367Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:32 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zq1syxri HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:38:32.414Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:38:32.524Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T13:38:32.527Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:32 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:38:32.535Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:38:32.552Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T13:38:32.553Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:32 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:38:33.955Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:33 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zq3531gx HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:38:35.765Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:35 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zq4jdspm HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:38:40.800Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:40 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zq8ew4p5 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:38:45.842Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:45 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zqcat9qo HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:38:50.734Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:50 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zqgg8whl HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:38:51.214Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-11T13:38:51.383Z] INFO: Received response from Auth Service: 200
+[2025-06-11T13:38:51.385Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:51 +0000] "POST /auth/login HTTP/1.1" 200 762 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:38:54.822Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:54 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zqjw01bt HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:38:54.825Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:38:54.827Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:54 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zqjw17j4 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:38:54.865Z] INFO: Received response from Calendar Service: 200
+[2025-06-11T13:38:54.866Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:54 +0000] "GET /calendar/api/events HTTP/1.1" 200 407 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:38:54.873Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:38:54.877Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T13:38:54.878Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:54 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:38:55.341Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:55 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zqkbwl5w HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:38:56.046Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:56 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zqkxcp6a HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:38:59.579Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:38:59 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zqmwx113 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:39:01.261Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:01 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zqo7jsdb HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:39:04.963Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:04 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zqr2bj7s HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:39:06.314Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:06 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zqs3ce34 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:39:10.962Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:10 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zqvoxuuv HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:39:11.360Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:11 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zqw03sof HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:39:16.384Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:16 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zqzvixye HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:39:16.970Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:16 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zr0bu8b9 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:39:21.179Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:21 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zr3r4svw HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:39:22.604Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:22 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zr4y832m HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:39:25.787Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:25 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zr7my9x1 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:39:28.109Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:28 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zr9l2c65 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:39:31.276Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:31 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zrbid83x HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:39:33.588Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:33 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zrdgil66 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:39:35.887Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:35 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zrfe03n3 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:39:38.200Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:38 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zrhc70lk HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:39:40.493Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:40 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zrj9pbki HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:39:42.802Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:42 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zrl7qwfm HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:39:43.707Z] INFO: Proxying POST /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:39:43.774Z] INFO: Received response from Calendar Service: 201
+[2025-06-11T13:39:43.775Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:43 +0000] "POST /calendar/api/events HTTP/1.1" 201 357 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:39:43.790Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:39:43.798Z] INFO: Received response from Calendar Service: 200
+[2025-06-11T13:39:43.799Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:43 +0000] "GET /calendar/api/events HTTP/1.1" 200 718 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:39:45.097Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:45 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zrn5659y HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:39:47.541Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:47 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zrp3c6bf HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:39:49.699Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:49 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zrr0ncpy HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:39:52.281Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:52 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zrt6zo7l HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:39:54.294Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:54 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zruvvsfs HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:39:56.878Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:56 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zrx289wb HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:39:58.894Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:39:58 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zryrai9m HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:40:04.213Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:04 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zs0xs3dk HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:40:06.232Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:06 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zs2mwnmz HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:40:08.806Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:08 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zs4t0ldl HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:40:10.834Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:10 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zs6ig4pw HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:40:13.887Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:13 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zs92u4ib HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:40:15.440Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:15 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zsae0wcv HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:40:19.391Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:19 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zsdpkx6z HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:40:20.128Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:20 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zsebw44h HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:40:24.739Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:24 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zsi7rx6s HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:40:24.885Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:24 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zsic46uo HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:40:29.334Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:29 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zsm30cdj HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:40:30.388Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:30 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zsmyx81i HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:40:36.662Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:36 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zspyf44f HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:40:38.617Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:38 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zsrle2vg HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:40:41.267Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:41 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zsttyplh HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:40:44.116Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:44 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zsw87eob HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:40:45.881Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:45 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zsxpmoy6 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:40:49.605Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:49 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zt0ujii9 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:40:50.489Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:50 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zt1ldcxh HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:40:55.095Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:55 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zt5guy7x HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:40:55.115Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:55 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zt5hazgd HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:40:59.697Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:40:59 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zt9cgago HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:41:00.609Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:00 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zta42d7k HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:41:04.290Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:04 +0000] "GET /socket.io/?EIO=4&transport=polling&t=ztd7n1c6 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:41:08.838Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:08 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zteqp25v HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:41:11.619Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:11 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zth30ojc HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:41:14.344Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:14 +0000] "GET /socket.io/?EIO=4&transport=polling&t=ztjdkjvh HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:41:16.220Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:16 +0000] "GET /socket.io/?EIO=4&transport=polling&t=ztkyhpwc HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:41:19.838Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:19 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zto018ud HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:41:20.849Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:20 +0000] "GET /socket.io/?EIO=4&transport=polling&t=ztotzhme HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:41:25.334Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:25 +0000] "GET /socket.io/?EIO=4&transport=polling&t=ztsmkoob HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:41:25.473Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:25 +0000] "GET /socket.io/?EIO=4&transport=polling&t=ztsqv2sc HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:41:30.080Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:30 +0000] "GET /socket.io/?EIO=4&transport=polling&t=ztwmhc9d HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:41:30.842Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:30 +0000] "GET /socket.io/?EIO=4&transport=polling&t=ztx9iruj HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:41:34.674Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:34 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zu0hoxnq HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:41:36.334Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:36 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zu1vx2xj HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:41:42.001Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:42 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zu4cyt9x HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:41:44.568Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:44 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zu6iunsj HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:41:46.608Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:46 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zu88pvic HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:41:50.068Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:50 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zub5hih5 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:41:51.335Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:51 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zuc7w0vs HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:41:55.576Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:55 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zufs9jtg HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:41:55.938Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:41:55 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zug3gui9 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:42:00.545Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:00 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zujz17km HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:42:01.065Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:01 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zukekij0 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:42:05.142Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:05 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zunubmzk HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:42:06.557Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:06 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zup16kfe HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:42:09.748Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:09 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zurpvfv9 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:42:14.793Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:14 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zuto1pcw HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:42:17.092Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:17 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zuvlrn80 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:42:20.295Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:20 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zuyarnzp HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:42:21.698Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:21 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zuzh74iz HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:42:25.791Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:25 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zv2xb4d2 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:42:26.305Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:26 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zv3cwafx HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:42:30.912Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:30 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zv78i7ye HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:42:31.296Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:31 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zv7k5rnr HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:42:35.508Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:35 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zvb3t53s HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:42:36.802Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:36 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zvc6vt8h HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:42:40.116Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:40 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zvezg8h6 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:42:42.290Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:42 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zvgtaw4m HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:42:47.616Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:47 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zviuxko0 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:42:50.979Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:50 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zvlg5yfb HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:42:52.646Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:52 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zvmqhhqd HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:42:56.972Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:56 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zvq2rjb3 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:42:57.668Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:42:57 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zvqm4vdi HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:43:02.692Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:02 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zvuhocsp HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:43:02.971Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:02 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zvupg9z6 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:43:07.412Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:07 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zvyd9mpm HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:43:08.557Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:08 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zvzby5tu HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:43:12.013Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:12 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zw28ndjy HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:43:14.061Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:14 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zw3ypcd3 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:43:17.757Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:17 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zw6466lz HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:43:20.965Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:20 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zw8l92c4 HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:43:22.771Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:22 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zw9zc2ie HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:43:26.981Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:26 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zwd8bw3e HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:43:30.880Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:43:31.009Z] INFO: Received response from Calendar Service: 200
+[2025-06-11T13:43:31.010Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:31 +0000] "GET /calendar/api/events HTTP/1.1" 200 718 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:43:31.020Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:43:31.028Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T13:43:31.029Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:31 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:43:33.584Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:33 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zwibhmno HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:43:38.827Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:38 +0000] "GET /socket.io/?EIO=4&transport=polling&t=zwmhk87c HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:43:42.762Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:43:42.809Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T13:43:42.809Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:42 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:43:42.814Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:43:42.820Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T13:43:42.821Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:42 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T13:43:50.059Z] INFO: Proxying POST /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:43:50.104Z] INFO: Received response from Calendar Service: 201
+[2025-06-11T13:43:50.105Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:50 +0000] "POST /calendar/api/events HTTP/1.1" 201 357 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:43:50.142Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:43:50.148Z] INFO: Received response from Calendar Service: 200
+[2025-06-11T13:43:50.149Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:43:50 +0000] "GET /calendar/api/events HTTP/1.1" 200 1029 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:44:09.625Z] INFO: Proxying POST /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:44:09.674Z] INFO: Received response from Calendar Service: 201
+[2025-06-11T13:44:09.675Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:44:09 +0000] "POST /calendar/api/events HTTP/1.1" 201 376 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:44:09.711Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T13:44:09.719Z] INFO: Received response from Calendar Service: 200
+[2025-06-11T13:44:09.719Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:13:44:09 +0000] "GET /calendar/api/events HTTP/1.1" 200 1359 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T13:49:28.627Z] INFO: API Gateway running on port 3000
+[2025-06-11T13:50:11.589Z] INFO: API Gateway running on port 3000
+[2025-06-11T14:17:21.827Z] INFO: API Gateway running on port 3000
+[2025-06-11T14:30:11.281Z] INFO: API Gateway running on port 3000
+[2025-06-11T14:31:40.096Z] INFO: Proxying POST /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T14:31:41.401Z] INFO: Received response from Calendar Service: 201
+[2025-06-11T14:31:41.404Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:14:31:41 +0000] "POST /calendar/api/events HTTP/1.1" 201 409 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T14:31:41.435Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T14:31:41.455Z] INFO: Received response from Calendar Service: 200
+[2025-06-11T14:31:41.457Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:14:31:41 +0000] "GET /calendar/api/events HTTP/1.1" 200 1722 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T14:32:42.405Z] INFO: Proxying POST /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T14:32:43.488Z] INFO: Received response from Calendar Service: 201
+[2025-06-11T14:32:43.490Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:14:32:43 +0000] "POST /calendar/api/events HTTP/1.1" 201 440 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T14:32:43.508Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T14:32:43.520Z] INFO: Received response from Calendar Service: 200
+[2025-06-11T14:32:43.521Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:14:32:43 +0000] "GET /calendar/api/events HTTP/1.1" 200 2116 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T14:40:47.375Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T14:40:47.579Z] INFO: Received response from Calendar Service: 200
+[2025-06-11T14:40:47.580Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:14:40:47 +0000] "GET /calendar/api/events HTTP/1.1" 200 2116 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T14:40:47.610Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T14:40:47.635Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T14:40:47.641Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:14:40:47 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-11T14:51:32.514Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T14:51:32.701Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T14:51:32.704Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:14:51:32 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T14:51:32.709Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T14:51:32.719Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T14:51:32.720Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:14:51:32 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T14:56:46.982Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T14:56:47.072Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T14:56:47.073Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:14:56:47 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-11T14:56:47.080Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-11T14:56:47.091Z] INFO: Received response from Calendar Service: 304
+[2025-06-11T14:56:47.093Z] INFO: ::ffff:172.18.0.1 - - [11/Jun/2025:14:56:47 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T06:19:42.041Z] INFO: API Gateway running on port 3000
+[2025-06-12T06:20:33.300Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-12T06:20:33.425Z] INFO: Received response from Auth Service: 200
+[2025-06-12T06:20:33.428Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:06:20:33 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T06:29:46.377Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-12T06:29:46.445Z] INFO: Received response from Auth Service: 401
+[2025-06-12T06:29:46.446Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:06:29:46 +0000] "POST /auth/login HTTP/1.1" 401 31 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T06:29:55.397Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-12T06:29:55.466Z] INFO: Received response from Auth Service: 200
+[2025-06-12T06:29:55.467Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:06:29:55 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T11:11:52.933Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-12T11:11:53.377Z] INFO: Received response from Auth Service: 200
+[2025-06-12T11:11:53.381Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:11:11:53 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-12T11:24:47.514Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T11:24:47.726Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T11:24:47.728Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:11:24:47 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-12T11:24:47.731Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T11:24:47.738Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T11:24:47.741Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:11:24:47 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-12T11:24:56.179Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T11:24:56.191Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T11:24:56.191Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:11:24:56 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-12T11:24:56.195Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T11:24:56.200Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T11:24:56.201Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:11:24:56 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-12T14:20:34.842Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:20:35.213Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T14:20:35.216Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:20:35 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:20:35.220Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:20:35.234Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T14:20:35.235Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:20:35 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:27:38.156Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:27:38.226Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T14:27:38.227Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:27:38 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:33:23.115Z] INFO: API Gateway running on port 3000
+[2025-06-12T14:33:37.243Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:33:37.351Z] INFO: Received response from Calendar Service: 200
+[2025-06-12T14:33:37.354Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:33:37 +0000] "GET /calendar/api/events HTTP/1.1" 200 2800 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:33:37.366Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:33:37.378Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T14:33:37.379Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:33:37 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:34:18.029Z] INFO: Proxying POST /calendar/api/events/recurring to Calendar Service at http://calendar-service:3003/api/events/recurring
+[2025-06-12T14:34:18.117Z] INFO: Received response from Calendar Service: 201
+[2025-06-12T14:34:18.119Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:34:18 +0000] "POST /calendar/api/events/recurring HTTP/1.1" 201 9859 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:34:18.240Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:34:18.254Z] INFO: Received response from Calendar Service: 200
+[2025-06-12T14:34:18.255Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:34:18 +0000] "GET /calendar/api/events HTTP/1.1" 200 14269 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:36:47.182Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:36:47.225Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T14:36:47.227Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:36:47 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:36:47.232Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:36:47.240Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T14:36:47.244Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:36:47 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:36:55.615Z] INFO: Proxying PUT /calendar/api/events/7 to Calendar Service at http://calendar-service:3003/api/events/7
+[2025-06-12T14:36:55.643Z] INFO: Received response from Calendar Service: 200
+[2025-06-12T14:36:55.644Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:36:55 +0000] "PUT /calendar/api/events/7 HTTP/1.1" 200 61 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:36:55.679Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:36:55.693Z] INFO: Received response from Calendar Service: 200
+[2025-06-12T14:36:55.695Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:36:55 +0000] "GET /calendar/api/events HTTP/1.1" 200 14263 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:37:09.520Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:37:09.560Z] INFO: Received response from Calendar Service: 200
+[2025-06-12T14:37:09.562Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:37:09 +0000] "GET /calendar/api/events HTTP/1.1" 200 14263 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-12T14:37:09.573Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:37:09.582Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T14:37:09.583Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:37:09 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+[2025-06-12T14:43:09.434Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:43:09.481Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T14:43:09.481Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:43:09 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:43:09.486Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:43:09.498Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T14:43:09.500Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:43:09 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:43:54.796Z] INFO: Proxying POST /calendar/api/events/recurring to Calendar Service at http://calendar-service:3003/api/events/recurring
+[2025-06-12T14:43:54.851Z] INFO: Received response from Calendar Service: 201
+[2025-06-12T14:43:54.853Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:43:54 +0000] "POST /calendar/api/events/recurring HTTP/1.1" 201 9939 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:43:54.999Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:43:55.014Z] INFO: Received response from Calendar Service: 200
+[2025-06-12T14:43:55.017Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:43:55 +0000] "GET /calendar/api/events HTTP/1.1" 200 25812 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:44:13.066Z] INFO: Proxying PUT /calendar/api/events/34 to Calendar Service at http://calendar-service:3003/api/events/34
+[2025-06-12T14:44:13.096Z] INFO: Received response from Calendar Service: 200
+[2025-06-12T14:44:13.097Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:44:13 +0000] "PUT /calendar/api/events/34 HTTP/1.1" 200 61 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:44:13.120Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:44:13.132Z] INFO: Received response from Calendar Service: 200
+[2025-06-12T14:44:13.133Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:44:13 +0000] "GET /calendar/api/events HTTP/1.1" 200 25806 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:44:21.749Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:44:21.767Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T14:44:21.768Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:44:21 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:44:21.786Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:44:21.797Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T14:44:21.797Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:44:21 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:56:46.825Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:56:46.874Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T14:56:46.875Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:56:46 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-12T14:56:46.887Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-12T14:56:46.898Z] INFO: Received response from Calendar Service: 304
+[2025-06-12T14:56:46.899Z] INFO: ::ffff:172.18.0.1 - - [12/Jun/2025:14:56:46 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T06:27:52.068Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T06:27:52.326Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T06:27:52.329Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:06:27:52 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T06:27:52.362Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T06:27:52.377Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T06:27:52.378Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:06:27:52 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T06:55:34.760Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T06:55:34.889Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T06:55:34.890Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:06:55:34 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T06:55:34.903Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T06:55:34.964Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T06:55:34.965Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:06:55:34 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T07:17:00.642Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T07:17:00.717Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T07:17:00.719Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:07:17:00 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T07:17:00.731Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T07:17:00.743Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T07:17:00.744Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:07:17:00 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T07:17:12.960Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T07:17:12.998Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T07:17:12.999Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:07:17:12 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T07:17:13.010Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T07:17:13.023Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T07:17:13.024Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:07:17:13 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T07:59:37.193Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T07:59:37.292Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T07:59:37.293Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:07:59:37 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T07:59:37.315Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T07:59:37.329Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T07:59:37.330Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:07:59:37 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T08:58:03.996Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T08:58:04.165Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T08:58:04.167Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:08:58:04 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T08:58:04.201Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T08:58:04.229Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T08:58:04.230Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:08:58:04 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T09:03:35.796Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T09:03:35.844Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T09:03:35.845Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:09:03:35 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T09:03:35.862Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T09:03:35.872Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T09:03:35.872Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:09:03:35 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T09:32:31.042Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-13T09:32:31.121Z] INFO: Received response from Calendar Service: 304
+[2025-06-13T09:32:31.122Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:09:32:31 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T09:36:04.675Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-13T09:36:05.081Z] INFO: Received response from Auth Service: 200
+[2025-06-13T09:36:05.087Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:09:36:05 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-13T10:02:38.807Z] INFO: ::ffff:172.18.0.1 - - [13/Jun/2025:10:02:38 +0000] "GET /api/solicitudes HTTP/1.1" 404 27 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-16T06:40:43.455Z] INFO: Proxying POST /auth/login to Auth Service at http://auth-service:4001/api/auth/api/auth/login
+[2025-06-16T06:40:44.309Z] INFO: Received response from Auth Service: 200
+[2025-06-16T06:40:44.314Z] INFO: ::ffff:172.18.0.1 - - [16/Jun/2025:06:40:44 +0000] "POST /auth/login HTTP/1.1" 200 765 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-16T07:11:01.150Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-16T07:11:01.416Z] INFO: Received response from Calendar Service: 304
+[2025-06-16T07:11:01.419Z] INFO: ::ffff:172.18.0.1 - - [16/Jun/2025:07:11:01 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-16T07:11:01.439Z] INFO: Proxying GET /calendar/api/events to Calendar Service at http://calendar-service:3003/api/events
+[2025-06-16T07:11:01.456Z] INFO: Received response from Calendar Service: 304
+[2025-06-16T07:11:01.462Z] INFO: ::ffff:172.18.0.1 - - [16/Jun/2025:07:11:01 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"

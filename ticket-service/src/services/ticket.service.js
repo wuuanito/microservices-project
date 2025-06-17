@@ -2,6 +2,7 @@ const ticketRepository = require('../repositories/ticket.repository');
 const conversationRepository = require('../repositories/conversation.repository');
 const { AppError } = require('../utils/error-handler');
 const logger = require('../utils/logger');
+const { sendEmail } = require('../utils/email.service'); // Importar el servicio de correo
 
 class TicketService {
   async getAllTickets(filters = {}, pagination = {}) {
@@ -57,7 +58,87 @@ class TicketService {
         });
       }
       
-      return await this.getTicketById(ticket.id);
+      const createdTicket = await this.getTicketById(ticket.id);
+
+      // Notificación por correo al equipo de TI
+      const itTeamEmail = process.env.IT_TEAM_EMAIL || 'desarrollos@naturepharma.es'; // Usar variable de entorno
+      const subjectNewTicket = `Nuevo Ticket Creado: ${createdTicket.id} - ${createdTicket.asunto}`;
+      const textNewTicket = `Se ha creado un nuevo ticket con ID ${createdTicket.id}.\nAsunto: ${createdTicket.asunto}\nUsuario: ${createdTicket.usuario} (${createdTicket.usuarioEmail || 'N/A'})\nDepartamento: ${createdTicket.departamento}\nPrioridad: ${createdTicket.prioridad}\nDescripción: ${createdTicket.descripcion}`;
+      const htmlNewTicket = `
+      <!DOCTYPE html>
+      <html lang="es">
+      <head>
+        <meta charset="UTF-8">
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            color: #333333;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+          }
+          .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          }
+          .header {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          .header img {
+            max-width: 180px;
+            height: auto;
+          }
+          .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #003366;
+            margin-top: 10px;
+          }
+          .content p {
+            font-size: 15px;
+            line-height: 1.6;
+          }
+          .footer {
+            font-size: 13px;
+            text-align: center;
+            color: #777777;
+            margin-top: 30px;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <img src="https://www.riojanaturepharma.com/assets/img/logo-big.png" alt="NaturePharma Logo">
+            <div class="title">Nuevo Ticket Creado</div>
+          </div>
+          <div class="content">
+            <p><strong>ID del Ticket:</strong> ${createdTicket.id}</p>
+            <p><strong>Asunto:</strong> ${createdTicket.asunto}</p>
+            <p><strong>Usuario:</strong> ${createdTicket.usuario} (${createdTicket.usuarioEmail || 'N/A'})</p>
+            <p><strong>Departamento:</strong> ${createdTicket.departamento}</p>
+            <p><strong>Prioridad:</strong> ${createdTicket.prioridad}</p>
+            <p><strong>Descripción:</strong><br>${createdTicket.descripcion.replace(/\n/g, '<br>')}</p>
+            <p>Por favor, accede al sistema para gestionar o responder al ticket.</p>
+          </div>
+          <div class="footer">
+            NaturePharma &copy; ${new Date().getFullYear()} – Sistema de Gestión de Soporte Técnico
+          </div>
+        </div>
+      </body>
+      </html>
+    `;
+    
+      sendEmail(itTeamEmail, subjectNewTicket, textNewTicket, htmlNewTicket).catch(err => {
+        logger.error(`Error al enviar correo de nuevo ticket a informática: ${err.message}`);
+      });
+
+      return createdTicket;
     } catch (error) {
       logger.error('Error creating ticket:', error);
       throw new AppError('Error al crear el ticket', 500);
@@ -82,7 +163,28 @@ class TicketService {
       }
       
       logger.info(`Updating ticket ${id}:`, updatedData);
-      return await ticketRepository.update(id, updatedData);
+      const updatedTicket = await ticketRepository.update(id, updatedData);
+
+      // Notificación por correo si el estado ha cambiado
+      if (updatedTicket && updateData.estado && existingTicket.estado !== updatedTicket.estado) {
+        if (updatedTicket.usuarioEmail) {
+          const subjectStatusChange = `Actualización de Estado del Ticket: ${updatedTicket.id}`;
+          const textStatusChange = `Hola ${updatedTicket.usuario},\n\nEl estado de tu ticket con ID ${updatedTicket.id} ("${updatedTicket.asunto}") ha cambiado a: ${updatedTicket.estado}.\n\nPuedes revisar los detalles en el sistema.\n\nSaludos,\nEquipo de Soporte NaturePharma`;
+          const htmlStatusChange = `<p>Hola ${updatedTicket.usuario},</p>
+                               <p>El estado de tu ticket con ID <strong>${updatedTicket.id}</strong> ("${updatedTicket.asunto}") ha cambiado a: <strong>${updatedTicket.estado}</strong>.</p>
+                               <p>Puedes revisar los detalles en el sistema.</p>
+                               <br>
+                               <p>Saludos,</p>
+                               <p>Equipo de Soporte NaturePharma</p>`;
+          sendEmail(updatedTicket.usuarioEmail, subjectStatusChange, textStatusChange, htmlStatusChange).catch(err => {
+            logger.error(`Error al enviar correo de cambio de estado a ${updatedTicket.usuarioEmail}: ${err.message}`);
+          });
+        } else {
+          logger.warn(`No se pudo enviar correo de cambio de estado para el ticket ${updatedTicket.id}: no hay email de usuario.`);
+        }
+      }
+
+      return updatedTicket;
     } catch (error) {
       if (error instanceof AppError) {
         throw error;

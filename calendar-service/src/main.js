@@ -1,6 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const http = require('http'); // <--- Nueva importación
+const { Server } = require('socket.io'); // <--- Nueva importación
 const sequelize = require('./database/sequelize');
 const eventRoutes = require('./routes/event.routes');
 const { formatResponse } = require('./utils/response-formatter');
@@ -9,6 +11,14 @@ const { formatResponse } = require('./utils/response-formatter');
 require('./models/event.model');
 
 const app = express();
+const server = http.createServer(app); // <--- Crear servidor HTTP
+const io = new Server(server, { // <--- Inicializar Socket.IO
+  cors: {
+    origin: "http://localhost:5173", // Reemplaza con el origen de tu frontend
+    methods: ["GET", "POST"]
+  }
+});
+
 const PORT = process.env.PORT || 3003;
 
 // Middleware
@@ -20,7 +30,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   res.status(200).json(formatResponse(null, 'Calendar Service API is running!'));
 });
-app.use('/api/events', eventRoutes);
+app.use('/api/events', eventRoutes(io)); // <--- Pasar instancia de io a las rutas de eventos
 
 // Manejo de errores global (básico)
 app.use((err, req, res, next) => {
@@ -39,7 +49,14 @@ const startServer = async () => {
     await sequelize.sync({ alter: true });
     console.log('All models were synchronized successfully.');
 
-    app.listen(PORT, () => {
+    io.on('connection', (socket) => {
+      console.log('a user connected');
+      socket.on('disconnect', () => {
+        console.log('user disconnected');
+      });
+    });
+
+    server.listen(PORT, () => { // <--- Usar server.listen en lugar de app.listen
       console.log(`Calendar Service listening on port ${PORT}`);
     });
   } catch (error) {

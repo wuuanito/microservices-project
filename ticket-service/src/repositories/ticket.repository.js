@@ -122,7 +122,7 @@ class TicketRepository {
   
   async generateTicketId() {
     const lastTicket = await Ticket.findOne({
-      order: [['createdAt', 'DESC']]
+      order: [['createdAt', 'DESC'], ['id', 'DESC']]
     });
     
     if (!lastTicket) {
