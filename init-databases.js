@@ -64,6 +64,15 @@ const initializeDatabases = async () => {
       console.error(`Failed to handle calendar database: ${error.message}`);
     }
     
+    // Crear base de datos para informatica-service
+    const informaticaDbName = process.env.INFORMATICA_DB_NAME || 'informatica_db';
+    try {
+      await createDatabaseIfNotExists(informaticaDbName);
+    } catch (error) {
+      hasErrors = true;
+      console.error(`Failed to handle informatica database: ${error.message}`);
+    }
+    
     if (hasErrors) {
       console.log('⚠️  Database initialization completed with warnings.');
       console.log('   Some databases may need to be created manually.');
@@ -79,6 +88,7 @@ const initializeDatabases = async () => {
     console.log('3. Create databases manually if needed:');
     console.log(`   CREATE DATABASE IF NOT EXISTS \`${process.env.AUTH_DB_NAME || 'auth_service_db'}\`;`);
     console.log(`   CREATE DATABASE IF NOT EXISTS \`${process.env.CALENDAR_DB_NAME || 'calendar_service_db'}\`;`);
+    console.log(`   CREATE DATABASE IF NOT EXISTS \`${process.env.INFORMATICA_DB_NAME || 'informatica_db'}\`;`);
     process.exit(1);
   }
 };

@@ -1,0 +1,170 @@
+{
+  "name": "💻 Informatica Service",
+  "item": [
+    {
+      "name": "Health Check - Informatica Service",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/informatica/health",
+          "host": ["{{base_url}}"],
+          "path": ["api", "informatica", "health"]
+        },
+        "description": "Verificar el estado del servicio de informática"
+      }
+    },
+    {
+      "name": "Get All Equipos",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{auth_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/informatica/equipos",
+          "host": ["{{base_url}}"],
+          "path": ["api", "informatica", "equipos"]
+        }
+      }
+    },
+    {
+      "name": "Create Equipo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{auth_token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": \"PC001\",\n  \"nombre\": \"PC Oficina 1\",\n  \"ip\": \"192.168.1.100\",\n  \"usuario\": \"admin\",\n  \"password\": \"password123\",\n  \"tipo\": \"Desktop\",\n  \"ubicacion\": \"Oficina Principal\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/informatica/equipos",
+          "host": ["{{base_url}}"],
+          "path": ["api", "informatica", "equipos"]
+        }
+      }
+    },
+    {
+      "name": "Get All Servidores",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{auth_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/informatica/servidores",
+          "host": ["{{base_url}}"],
+          "path": ["api", "informatica", "servidores"]
+        }
+      }
+    },
+    {
+      "name": "Get All Switches",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{auth_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/informatica/switches",
+          "host": ["{{base_url}}"],
+          "path": ["api", "informatica", "switches"]
+        }
+      }
+    },
+    {
+      "name": "Get Usuarios Dominio",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{auth_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/informatica/usuarios-dominio",
+          "host": ["{{base_url}}"],
+          "path": ["api", "informatica", "usuarios-dominio"]
+        }
+      }
+    },
+    {
+      "name": "Get Cuentas Office",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{auth_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/informatica/cuentas-office",
+          "host": ["{{base_url}}"],
+          "path": ["api", "informatica", "cuentas-office"]
+        }
+      }
+    },
+    {
+      "name": "Get Camaras Seguridad",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{auth_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/informatica/camaras-seguridad",
+          "host": ["{{base_url}}"],
+          "path": ["api", "informatica", "camaras-seguridad"]
+        }
+      }
+    },
+    {
+      "name": "Get Inventario",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{auth_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/informatica/inventario",
+          "host": ["{{base_url}}"],
+          "path": ["api", "informatica", "inventario"]
+        }
+      }
+    }
+  ]
+}

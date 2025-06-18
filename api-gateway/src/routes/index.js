@@ -1,6 +1,7 @@
 const express = require('express');
 const authRoutes = require('./auth.routes');
 const calendarRoutes = require('./calendar.routes');
+const informaticaRoutes = require('./informatica.routes');
 const { loggerMiddleware } = require('../middleware/logger.middleware');
 
 const router = express.Router();
@@ -16,6 +17,7 @@ router.get('/health', (req, res) => {
 // Mount routes
 router.use('/auth', authRoutes);
 router.use('/calendar', calendarRoutes); // Mount calendar routes
+router.use('/informatica', informaticaRoutes); // Mount informatica routes
 
 // Catch-all route
 router.use('*', (req, res) => {

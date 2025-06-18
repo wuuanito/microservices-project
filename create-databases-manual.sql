@@ -12,9 +12,15 @@ CREATE DATABASE IF NOT EXISTS `calendar_service_db`
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_unicode_ci;
 
+-- Create Informatica Service Database
+CREATE DATABASE IF NOT EXISTS `informatica_db`
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
 -- Optional: Grant privileges to the user (replace 'root' with your actual username)
 -- GRANT ALL PRIVILEGES ON `auth_service_db`.* TO 'root'@'%';
 -- GRANT ALL PRIVILEGES ON `calendar_service_db`.* TO 'root'@'%';
+-- GRANT ALL PRIVILEGES ON `informatica_db`.* TO 'root'@'%';
 -- FLUSH PRIVILEGES;
 
 -- Verify databases were created
