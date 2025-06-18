@@ -4751,3 +4751,4 @@
 [2025-06-17T10:26:46.785Z] INFO: ::ffff:172.18.0.1 - - [17/Jun/2025:10:26:46 +0000] "GET /calendar/api/events HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
 [2025-06-17T10:30:50.386Z] INFO: ::ffff:172.18.0.1 - - [17/Jun/2025:10:30:50 +0000] "GET /solicitudes/api/solicitudes HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
 [2025-06-17T10:30:50.393Z] INFO: ::ffff:172.18.0.1 - - [17/Jun/2025:10:30:50 +0000] "GET /solicitudes/api/solicitudes HTTP/1.1" 401 58 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+[2025-06-18T11:16:43.886Z] INFO: API Gateway running on port 3000
