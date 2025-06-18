@@ -1,9 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const ticketRoutes = require('./ticket.routes');
+const emailRoutes = require('./email.routes');
 
 // Mount ticket routes
 router.use('/api/tickets', ticketRoutes);
+
+// Mount email routes
+router.use('/api/email', emailRoutes);
 
 // Root health check
 router.get('/health', (req, res) => {
@@ -31,6 +35,10 @@ router.get('/', (req, res) => {
         'POST /tickets/:id/conversations': 'Agregar conversación',
         'PATCH /tickets/:id/assign': 'Asignar ticket',
         'GET /tickets/stats': 'Obtener estadísticas'
+      },
+      email: {
+        'POST /email/send': 'Enviar email genérico',
+        'POST /email/suggestion': 'Enviar sugerencia por email'
       }
     },
     timestamp: new Date().toISOString()
