@@ -180,6 +180,36 @@ app.use('/solicitudes', authMiddleware, createProxyMiddleware({
   }
 }));
 
+// Proxy setup for informatica service
+app.use('/api/informatica', authMiddleware, createProxyMiddleware({
+  target: config.informaticaServiceUrl,
+  changeOrigin: true,
+  pathRewrite: {
+    '^/api/informatica': '/api' // Remove /api/informatica prefix and replace with /api
+  },
+  logLevel: 'debug',
+  onProxyReq: (proxyReq, req, res) => {
+    if (req.body) {
+      const bodyData = JSON.stringify(req.body);
+      proxyReq.setHeader('Content-Type', 'application/json');
+      proxyReq.setHeader('Content-Length', Buffer.byteLength(bodyData));
+      proxyReq.write(bodyData);
+    }
+    logger.info(`Proxying ${req.method} ${req.originalUrl} to Informatica Service. Target: ${config.informaticaServiceUrl}, Rewritten Path: ${proxyReq.path}`);
+  },
+  onProxyRes: (proxyRes, req, res) => {
+    logger.info(`Received response from Informatica Service: ${proxyRes.statusCode}`);
+  },
+  onError: (err, req, res) => {
+    logger.error(`Proxy error to Informatica Service: ${err.toString()}`);
+    res.status(502).json({
+      error: 'Bad Gateway',
+      message: 'Error connecting to informatica service',
+      details: err.toString()
+    });
+  }
+}));
+
 // Catch-all route
 app.use('*', (req, res) => {
   res.status(404).json({ error: 'Route not found' });
