@@ -9,6 +9,8 @@ services:
       - NODE_ENV=development
       - PORT=3000
       - AUTH_SERVICE_URL=http://auth-service:4001
+      - TICKETS_SERVICE_URL=http://ticket-service:4003
+      - SOLICITUDES_SERVICE_URL=http://solicitudes-service:4000
       - CALENDAR_SERVICE_URL=http://calendar-service:3003
       - JWT_SECRET=${JWT_SECRET}
     depends_on:

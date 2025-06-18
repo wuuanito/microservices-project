@@ -910,3 +910,5 @@
 [2025-06-17T08:33:15.345Z] INFO: Database connection established successfully
 [2025-06-17T08:33:16.910Z] INFO: Database synchronized successfully
 [2025-06-17T08:33:16.912Z] INFO: Auth service running on port 4001
+[2025-06-17T10:04:00.973Z] INFO: ::ffff:172.18.0.5 - - [17/Jun/2025:10:04:00 +0000] "POST /api/auth/register HTTP/1.1" 409 59 "-" "PostmanRuntime/7.44.0"
+[2025-06-17T10:04:19.426Z] INFO: ::ffff:172.18.0.5 - - [17/Jun/2025:10:04:19 +0000] "POST /api/auth/register HTTP/1.1" 409 59 "-" "PostmanRuntime/7.44.0"
