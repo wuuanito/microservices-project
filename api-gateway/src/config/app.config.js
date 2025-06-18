@@ -4,7 +4,7 @@ module.exports = {
   port: process.env.PORT || 3000,
   nodeEnv: process.env.NODE_ENV || 'development',
   authServiceUrl: process.env.AUTH_SERVICE_URL || 'http://auth-service:4001',
-  ticketsServiceUrl: process.env.TICKETS_SERVICE_URL || 'http://tickets-service:4003',
+  ticketsServiceUrl: process.env.TICKETS_SERVICE_URL || 'http://ticket-service:4003',
   calendarServiceUrl: process.env.CALENDAR_SERVICE_URL || 'http://calendar-service:3003',
   solicitudesServiceUrl: process.env.SOLICITUDES_SERVICE_URL || 'http://solicitudes-service:4000',
   informaticaServiceUrl: process.env.INFORMATICA_SERVICE_URL || 'http://informatica-service:3001',

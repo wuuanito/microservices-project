@@ -21,25 +21,7 @@ const configureRoutes = (app) => {
     })
   );
 
-  // Protected routes
-  app.use('/api/tickets',
-    authMiddleware,
-    rateLimiterMiddleware,
-    createProxyMiddleware({
-      target: config.ticketsServiceUrl,
-      changeOrigin: true,
-      pathRewrite: {
-        '^/api/tickets': '/api/tickets'
-      },
-      onError: (err, req, res) => {
-        logger.error(`Proxy error: ${err.message}`);
-        res.status(500).json({
-          error: 'Service unavailable',
-          message: 'Ticket service is currently unavailable'
-        });
-      }
-    })
-  );
+  // Tickets routes are configured in main.js
 
   // Catch-all route
   app.use('*', (req, res) => {
