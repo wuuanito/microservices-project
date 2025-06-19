@@ -159,7 +159,7 @@ Thumbs.db
 
 # Docker
 .dockerignore
-Dockerfile
+# Dockerfile
 
 
 # PM2
