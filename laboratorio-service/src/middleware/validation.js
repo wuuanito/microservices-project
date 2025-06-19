@@ -84,10 +84,13 @@ const defectoSchema = Joi.object({
     
   tipoArticulo: Joi.string()
     .required()
-    .valid('medicamento', 'suplemento', 'cosmético', 'dispositivo', 'materia_prima', 'envase', 'etiqueta')
+    .trim()
+    .min(1)
+    .max(100)
     .messages({
       'string.empty': 'El tipo de artículo es obligatorio',
-      'any.only': 'Tipo de artículo no válido'
+      'string.min': 'El tipo de artículo debe tener al menos 1 caracter',
+      'string.max': 'El tipo de artículo no puede exceder 100 caracteres'
     }),
     
   descripcionArticulo: Joi.string()
@@ -136,18 +139,24 @@ const defectoSchema = Joi.object({
     
   tipoDesviacion: Joi.string()
     .required()
-    .valid('critica', 'mayor', 'menor', 'observacion')
+    .trim()
+    .min(1)
+    .max(100)
     .messages({
       'string.empty': 'El tipo de desviación es obligatorio',
-      'any.only': 'Tipo de desviación no válido'
+      'string.min': 'El tipo de desviación debe tener al menos 1 caracter',
+      'string.max': 'El tipo de desviación no puede exceder 100 caracteres'
     }),
     
   decision: Joi.string()
     .required()
-    .valid('aceptar', 'rechazar', 'reprocesar', 'investigar', 'cuarentena')
+    .trim()
+    .min(1)
+    .max(100)
     .messages({
       'string.empty': 'La decisión es obligatoria',
-      'any.only': 'Decisión no válida'
+      'string.min': 'La decisión debe tener al menos 1 caracter',
+      'string.max': 'La decisión no puede exceder 100 caracteres'
     }),
     
   observacionesAdicionales: Joi.string()
@@ -173,9 +182,12 @@ const defectoSchema = Joi.object({
 // Schema para actualizar defecto (todos los campos opcionales excepto algunos)
 const defectoUpdateSchema = Joi.object({
   tipoArticulo: Joi.string()
-    .valid('medicamento', 'suplemento', 'cosmético', 'dispositivo', 'materia_prima', 'envase', 'etiqueta')
+    .trim()
+    .min(1)
+    .max(100)
     .messages({
-      'any.only': 'Tipo de artículo no válido'
+      'string.min': 'El tipo de artículo debe tener al menos 1 caracter',
+      'string.max': 'El tipo de artículo no puede exceder 100 caracteres'
     }),
     
   descripcionArticulo: Joi.string()
@@ -217,15 +229,21 @@ const defectoUpdateSchema = Joi.object({
     }),
     
   tipoDesviacion: Joi.string()
-    .valid('critica', 'mayor', 'menor', 'observacion')
+    .trim()
+    .min(1)
+    .max(100)
     .messages({
-      'any.only': 'Tipo de desviación no válido'
+      'string.min': 'El tipo de desviación debe tener al menos 1 caracter',
+      'string.max': 'El tipo de desviación no puede exceder 100 caracteres'
     }),
     
   decision: Joi.string()
-    .valid('aceptar', 'rechazar', 'reprocesar', 'investigar', 'cuarentena')
+    .trim()
+    .min(1)
+    .max(100)
     .messages({
-      'any.only': 'Decisión no válida'
+      'string.min': 'La decisión debe tener al menos 1 caracter',
+      'string.max': 'La decisión no puede exceder 100 caracteres'
     }),
     
   observacionesAdicionales: Joi.string()
@@ -249,9 +267,9 @@ const querySchema = Joi.object({
   limit: Joi.number().integer().min(1).max(100).default(10),
   sortBy: Joi.string().valid('fechaCreacion', 'createdAt', 'codigoDefecto', 'tipoDesviacion', 'decision').default('createdAt'),
   sortOrder: Joi.string().valid('asc', 'desc').default('desc'),
-  tipoArticulo: Joi.string().valid('medicamento', 'suplemento', 'cosmético', 'dispositivo', 'materia_prima', 'envase', 'etiqueta'),
-  tipoDesviacion: Joi.string().valid('critica', 'mayor', 'menor', 'observacion'),
-  decision: Joi.string().valid('aceptar', 'rechazar', 'reprocesar', 'investigar', 'cuarentena'),
+  tipoArticulo: Joi.string().trim().max(100),
+  tipoDesviacion: Joi.string().trim().max(100),
+  decision: Joi.string().trim().max(100),
   estado: Joi.string().valid('activo', 'inactivo', 'archivado').default('activo'),
   search: Joi.string().trim().max(100)
 });
