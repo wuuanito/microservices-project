@@ -258,29 +258,32 @@ const querySchema = Joi.object({
 
 // Middleware de validación
 const validateDefecto = (req, res, next) => {
-  console.log('=== VALIDACIÓN DEFECTO ===');
-  console.log('Datos recibidos:', req.body);
+  console.log('Datos recibidos en validateDefecto:');
+  console.log('req.body:', req.body);
+  console.log('req.files:', req.files);
+  console.log('req.file:', req.file);
   
-  const { error, value } = defectoSchema.validate(req.body, {
-    abortEarly: false,
-    stripUnknown: true
-  });
+  // Transform specific fields to uppercase before validation
+  if (req.body.codigoDefecto) {
+    req.body.codigoDefecto = req.body.codigoDefecto.toString().toUpperCase();
+  }
+  if (req.body.codigo) {
+    req.body.codigo = req.body.codigo.toString().toUpperCase();
+  }
+  
+  const { error, value } = defectoSchema.validate(req.body, { abortEarly: false });
   
   if (error) {
-    const errors = error.details.map(detail => ({
-      field: detail.path.join('.'),
-      message: detail.message
-    }));
-    
-    console.log('Errores de validación:', errors);
-    
+    console.log('Error de validación:', error.details);
     return res.status(400).json({
-      error: 'Datos de entrada no válidos',
-      details: errors
+      error: 'Datos de entrada inválidos',
+      details: error.details.map(detail => ({
+        field: detail.path.join('.'),
+        message: detail.message
+      }))
     });
   }
   
-  console.log('Datos validados:', value);
   req.validatedData = value;
   next();
 };

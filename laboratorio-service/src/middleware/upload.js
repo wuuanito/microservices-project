@@ -77,14 +77,15 @@ const handleMulterError = (error, req, res, next) => {
 
 // Middleware para procesar la imagen subida
 const processUploadedImage = (req, res, next) => {
-  if (req.file) {
+  if (req.files && req.files.imagenDefecto && req.files.imagenDefecto[0]) {
+    const file = req.files.imagenDefecto[0];
     // Agregar información adicional del archivo al request
     req.imageInfo = {
-      filename: req.file.filename,
-      originalName: req.file.originalname,
-      mimetype: req.file.mimetype,
-      size: req.file.size,
-      url: `/uploads/defectos/${req.file.filename}`
+      filename: file.filename,
+      originalName: file.originalname,
+      mimetype: file.mimetype,
+      size: file.size,
+      url: `/uploads/defectos/${file.filename}`
     };
   }
   next();
@@ -103,7 +104,19 @@ const deleteFile = (filename) => {
 };
 
 module.exports = {
-  upload: upload.single('imagenDefecto'),
+  upload: upload.fields([
+    { name: 'imagenDefecto', maxCount: 1 },
+    { name: 'codigoDefecto' },
+    { name: 'tipoArticulo' },
+    { name: 'descripcionArticulo' },
+    { name: 'codigo' },
+    { name: 'versionDefecto' },
+    { name: 'descripcionDefecto' },
+    { name: 'tipoDesviacion' },
+    { name: 'decision' },
+    { name: 'observacionesAdicionales' },
+    { name: 'creadoPor' }
+  ]),
   handleMulterError,
   processUploadedImage,
   deleteFile
