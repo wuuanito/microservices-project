@@ -78,16 +78,19 @@ Defecto.init({
     }
   },
   tipoArticulo: {
-    type: DataTypes.ENUM('medicamento', 'suplemento', 'cosmético', 'dispositivo', 'materia_prima', 'envase', 'etiqueta'),
+    type: DataTypes.STRING(100),
     allowNull: false,
     validate: {
       notEmpty: {
         msg: 'El tipo de artículo es obligatorio'
       },
-      isIn: {
-        args: [['medicamento', 'suplemento', 'cosmético', 'dispositivo', 'materia_prima', 'envase', 'etiqueta']],
-        msg: 'Tipo de artículo no válido'
+      len: {
+        args: [1, 100],
+        msg: 'El tipo de artículo debe tener entre 1 y 100 caracteres'
       }
+    },
+    set(value) {
+      this.setDataValue('tipoArticulo', value ? value.toString().trim() : value);
     }
   },
   descripcionArticulo: {
@@ -145,29 +148,35 @@ Defecto.init({
     }
   },
   tipoDesviacion: {
-    type: DataTypes.ENUM('critica', 'mayor', 'menor', 'observacion'),
+    type: DataTypes.STRING(100),
     allowNull: false,
     validate: {
       notEmpty: {
         msg: 'El tipo de desviación es obligatorio'
       },
-      isIn: {
-        args: [['critica', 'mayor', 'menor', 'observacion']],
-        msg: 'Tipo de desviación no válido'
+      len: {
+        args: [1, 100],
+        msg: 'El tipo de desviación debe tener entre 1 y 100 caracteres'
       }
+    },
+    set(value) {
+      this.setDataValue('tipoDesviacion', value ? value.toString().trim() : value);
     }
   },
   decision: {
-    type: DataTypes.ENUM('aceptar', 'rechazar', 'reprocesar', 'investigar', 'cuarentena'),
+    type: DataTypes.STRING(100),
     allowNull: false,
     validate: {
       notEmpty: {
         msg: 'La decisión es obligatoria'
       },
-      isIn: {
-        args: [['aceptar', 'rechazar', 'reprocesar', 'investigar', 'cuarentena']],
-        msg: 'Decisión no válida'
+      len: {
+        args: [1, 100],
+        msg: 'La decisión debe tener entre 1 y 100 caracteres'
       }
+    },
+    set(value) {
+      this.setDataValue('decision', value ? value.toString().trim() : value);
     }
   },
   // Campos de imagen separados para mejor manejo en MySQL
