@@ -210,6 +210,60 @@ app.use('/api/informatica', authMiddleware, createProxyMiddleware({
   }
 }));
 
+// Proxy setup for laboratorio service
+app.use('/api/laboratorio', authMiddleware, createProxyMiddleware({
+  target: config.laboratorioServiceUrl,
+  changeOrigin: true,
+  pathRewrite: {
+    '^/api/laboratorio': '/api' // Remove /api/laboratorio prefix and replace with /api
+  },
+  logLevel: 'debug',
+  onProxyReq: (proxyReq, req, res) => {
+    if (req.body) {
+      const bodyData = JSON.stringify(req.body);
+      proxyReq.setHeader('Content-Type', 'application/json');
+      proxyReq.setHeader('Content-Length', Buffer.byteLength(bodyData));
+      proxyReq.write(bodyData);
+    }
+    logger.info(`Proxying ${req.method} ${req.originalUrl} to Laboratorio Service. Target: ${config.laboratorioServiceUrl}, Rewritten Path: ${proxyReq.path}`);
+  },
+  onProxyRes: (proxyRes, req, res) => {
+    logger.info(`Received response from Laboratorio Service: ${proxyRes.statusCode}`);
+  },
+  onError: (err, req, res) => {
+    logger.error(`Proxy error to Laboratorio Service: ${err.toString()}`);
+    res.status(502).json({
+      error: 'Bad Gateway',
+      message: 'Error connecting to laboratorio service',
+      details: err.toString()
+    });
+  }
+}));
+
+// Proxy setup for laboratorio uploads (static files)
+app.use('/uploads/laboratorio', createProxyMiddleware({
+  target: config.laboratorioServiceUrl,
+  changeOrigin: true,
+  pathRewrite: {
+    '^/uploads/laboratorio': '/uploads' // Remove /uploads/laboratorio prefix and replace with /uploads
+  },
+  logLevel: 'debug',
+  onProxyReq: (proxyReq, req, res) => {
+    logger.info(`Proxying ${req.method} ${req.originalUrl} to Laboratorio Service uploads. Target: ${config.laboratorioServiceUrl}, Rewritten Path: ${proxyReq.path}`);
+  },
+  onProxyRes: (proxyRes, req, res) => {
+    logger.info(`Received response from Laboratorio Service uploads: ${proxyRes.statusCode}`);
+  },
+  onError: (err, req, res) => {
+    logger.error(`Proxy error to Laboratorio Service uploads: ${err.toString()}`);
+    res.status(502).json({
+      error: 'Bad Gateway',
+      message: 'Error connecting to laboratorio service uploads',
+      details: err.toString()
+    });
+  }
+}));
+
 // Catch-all route
 app.use('*', (req, res) => {
   res.status(404).json({ error: 'Route not found' });

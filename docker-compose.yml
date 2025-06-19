@@ -13,6 +13,7 @@ services:
       - SOLICITUDES_SERVICE_URL=http://solicitudes-service:4000
       - CALENDAR_SERVICE_URL=http://calendar-service:3003
       - INFORMATICA_SERVICE_URL=http://informatica-service:3001
+      - LABORATORIO_SERVICE_URL=http://laboratorio-service:3004
       - JWT_SECRET=${JWT_SECRET}
     depends_on:
       - auth-service
@@ -144,6 +145,31 @@ services:
     volumes:
       - ./informatica-service:/app
       - /app/node_modules
+    restart: unless-stopped
+
+  # Laboratorio Service
+  laboratorio-service:
+    build: ./laboratorio-service
+    container_name: laboratorio-service
+    ports:
+      - "${LABORATORIO_SERVICE_PORT:-3004}:3004"
+    environment:
+      - NODE_ENV=development
+      - PORT=3004
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${LABORATORIO_DB_NAME:-laboratorio_service_db}
+      - CORS_ORIGIN=*
+    depends_on:
+      - auth-service
+    networks:
+      - microservices-network
+    volumes:
+      - ./laboratorio-service:/app
+      - /app/node_modules
+      - ./laboratorio-service/uploads:/app/uploads
     restart: unless-stopped
 
 networks:
