@@ -78,7 +78,7 @@ const getDefectos = async (req, res, next) => {
         originalName: data.imagenOriginalName,
         mimetype: data.imagenMimetype,
         size: data.imagenSize,
-        url: data.imagenFilename ? `${process.env.BASE_URL || 'http://localhost:3003'}/uploads/defectos/${data.imagenFilename}` : null
+        url: data.imagenFilename ? `${process.env.BASE_URL || 'http://localhost:3004'}/uploads/defectos/${data.imagenFilename}` : null
       };
       
       // Agregar campos de compatibilidad
@@ -148,7 +148,7 @@ const getDefectoById = async (req, res, next) => {
       originalName: data.imagenOriginalName,
       mimetype: data.imagenMimetype,
       size: data.imagenSize,
-      url: data.imagenFilename ? `${process.env.BASE_URL || 'http://localhost:3003'}/uploads/defectos/${data.imagenFilename}` : null
+      url: data.imagenFilename ? `${process.env.BASE_URL || 'http://localhost:3004'}/uploads/defectos/${data.imagenFilename}` : null
     };
     data.fechaCreacion = data.createdAt;
     data.fechaActualizacion = data.updatedAt;
@@ -185,7 +185,7 @@ const getDefectoByCodigo = async (req, res, next) => {
       originalName: data.imagenOriginalName,
       mimetype: data.imagenMimetype,
       size: data.imagenSize,
-      url: data.imagenFilename ? `${process.env.BASE_URL || 'http://localhost:3003'}/uploads/defectos/${data.imagenFilename}` : null
+      url: data.imagenFilename ? `${process.env.BASE_URL || 'http://localhost:3004'}/uploads/defectos/${data.imagenFilename}` : null
     };
     data.fechaCreacion = data.createdAt;
     data.fechaActualizacion = data.updatedAt;
@@ -237,7 +237,7 @@ const createDefecto = async (req, res, next) => {
       originalName: data.imagenOriginalName,
       mimetype: data.imagenMimetype,
       size: data.imagenSize,
-      url: data.imagenFilename ? `${process.env.BASE_URL || 'http://localhost:3003'}/uploads/defectos/${data.imagenFilename}` : null
+      url: data.imagenFilename ? `${process.env.BASE_URL || 'http://localhost:3004'}/uploads/defectos/${data.imagenFilename}` : null
     };
     data.fechaCreacion = data.createdAt;
     data.fechaActualizacion = data.updatedAt;
@@ -316,7 +316,7 @@ const updateDefecto = async (req, res, next) => {
       originalName: data.imagenOriginalName,
       mimetype: data.imagenMimetype,
       size: data.imagenSize,
-      url: data.imagenFilename ? `${process.env.BASE_URL || 'http://localhost:3003'}/uploads/defectos/${data.imagenFilename}` : null
+      url: data.imagenFilename ? `${process.env.BASE_URL || 'http://localhost:3004'}/uploads/defectos/${data.imagenFilename}` : null
     };
     data.fechaCreacion = data.createdAt;
     data.fechaActualizacion = data.updatedAt;
@@ -471,7 +471,7 @@ const cambiarEstadoDefecto = async (req, res, next) => {
       originalName: data.imagenOriginalName,
       mimetype: data.imagenMimetype,
       size: data.imagenSize,
-      url: data.imagenFilename ? `${process.env.BASE_URL || 'http://localhost:3003'}/uploads/defectos/${data.imagenFilename}` : null
+      url: data.imagenFilename ? `${process.env.BASE_URL || 'http://localhost:3004'}/uploads/defectos/${data.imagenFilename}` : null
     };
     data.fechaCreacion = data.createdAt;
     data.fechaActualizacion = data.updatedAt;

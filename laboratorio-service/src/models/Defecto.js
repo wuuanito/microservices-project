@@ -18,7 +18,7 @@ class Defecto extends Model {
   // Getter virtual para obtener la URL completa de la imagen
   get imagenUrl() {
     if (this.imagenFilename) {
-      return `${process.env.BASE_URL || 'http://localhost:3003'}/uploads/defectos/${this.imagenFilename}`;
+      return `${process.env.BASE_URL || 'http://localhost:3004'}/uploads/defectos/${this.imagenFilename}`;
     }
     return null;
   }
