@@ -36,11 +36,28 @@ app.use(cors({
 }));
 app.use(morgan('combined'));
 app.use(limiter);
-app.use(express.json({ limit: '10mb' }));
-app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+// Conditional body parsing - exclude multipart/form-data
+app.use((req, res, next) => {
+  if (req.is('multipart/form-data')) {
+    return next();
+  }
+  express.json({ limit: '10mb' })(req, res, () => {
+    express.urlencoded({ extended: true, limit: '10mb' })(req, res, next);
+  });
+});
 
 // Servir archivos estáticos (imágenes)
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
+
+// Debug middleware for laboratorio requests
+app.use('/api/defectos', (req, res, next) => {
+  console.log('=== LABORATORIO SERVICE DEBUG ===');
+  console.log('Method:', req.method);
+  console.log('URL:', req.originalUrl);
+  console.log('Content-Type:', req.headers['content-type']);
+  console.log('Headers:', JSON.stringify(req.headers, null, 2));
+  next();
+});
 
 // Rutas
 app.use('/api/defectos', defectosRoutes);

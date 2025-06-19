@@ -12,7 +12,17 @@ const app = express();
 // Middleware
 app.use(helmet());
 app.use(cors());
-app.use(express.json());
+
+// Conditional body parsing - exclude multipart/form-data
+app.use((req, res, next) => {
+  if (req.is('multipart/form-data')) {
+    return next();
+  }
+  express.json()(req, res, () => {
+    express.urlencoded({ extended: true })(req, res, next);
+  });
+});
+
 app.use(morgan('combined', { stream: { write: message => logger.info(message.trim()) } }));
 
 // Health check endpoint
@@ -210,6 +220,18 @@ app.use('/api/informatica', authMiddleware, createProxyMiddleware({
   }
 }));
 
+// Debug middleware for laboratorio requests
+app.use('/api/laboratorio', (req, res, next) => {
+  console.log('=== API GATEWAY DEBUG ===');
+  console.log('Method:', req.method);
+  console.log('URL:', req.originalUrl);
+  console.log('Content-Type:', req.headers['content-type']);
+  console.log('Is multipart:', req.is('multipart/form-data'));
+  console.log('Body keys:', Object.keys(req.body || {}));
+  console.log('Files:', req.files ? 'Present' : 'Not present');
+  next();
+});
+
 // Proxy setup for laboratorio service
 app.use('/api/laboratorio', authMiddleware, createProxyMiddleware({
   target: config.laboratorioServiceUrl,
@@ -219,13 +241,20 @@ app.use('/api/laboratorio', authMiddleware, createProxyMiddleware({
   },
   logLevel: 'debug',
   onProxyReq: (proxyReq, req, res) => {
-    if (req.body) {
+    // Preserve Content-Type header for multipart/form-data
+    if (req.headers['content-type']) {
+      proxyReq.setHeader('Content-Type', req.headers['content-type']);
+    }
+    
+    // Only handle JSON body for non-multipart requests
+    if (req.body && !req.is('multipart/form-data')) {
       const bodyData = JSON.stringify(req.body);
       proxyReq.setHeader('Content-Type', 'application/json');
       proxyReq.setHeader('Content-Length', Buffer.byteLength(bodyData));
       proxyReq.write(bodyData);
     }
-    logger.info(`Proxying ${req.method} ${req.originalUrl} to Laboratorio Service. Target: ${config.laboratorioServiceUrl}, Rewritten Path: ${proxyReq.path}`);
+    
+    logger.info(`Proxying ${req.method} ${req.originalUrl} to Laboratorio Service. Content-Type: ${req.headers['content-type']}`);
   },
   onProxyRes: (proxyRes, req, res) => {
     logger.info(`Received response from Laboratorio Service: ${proxyRes.statusCode}`);
@@ -237,7 +266,9 @@ app.use('/api/laboratorio', authMiddleware, createProxyMiddleware({
       message: 'Error connecting to laboratorio service',
       details: err.toString()
     });
-  }
+  },
+  xfwd: true,
+  selfHandleResponse: false
 }));
 
 // Proxy setup for laboratorio uploads (static files)
