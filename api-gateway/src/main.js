@@ -105,7 +105,7 @@ app.use('/tickets', authMiddleware, createProxyMiddleware({
   target: config.ticketsServiceUrl,
   changeOrigin: true,
   pathRewrite: {
-    '^/tickets': '' // Remove /tickets prefix, the service already handles /api/tickets
+    '^/tickets': '/api/tickets' // Rewrite /tickets to /api/tickets
   },
   logLevel: 'debug',
   onProxyReq: (proxyReq, req, res) => {
